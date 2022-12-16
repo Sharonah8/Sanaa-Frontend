@@ -1,10 +1,11 @@
 
 import './App.css';
+import MainGallery from './Components/MainGallery';
 
 function App() {
   return (
     <div className="App">
-      <h1>Sanaa</h1>
+      <MainGallery />
     </div>
   );
 }
