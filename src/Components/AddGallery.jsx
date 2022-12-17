@@ -1,8 +1,10 @@
 import React from 'react'
-
+import '../Styles/AddGallery.css'
 function AddGallery() {
   return (
-    <div>AddGallery</div>
+    <div>
+      
+    </div>
   )
 }
 
