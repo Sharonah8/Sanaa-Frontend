@@ -1,10 +1,13 @@
-h1{
+.about-heading{
     color: black;
-    margin-top: 10em;
+    margin-top: 8em;
+    font-size: 4em;
 }
 
-div{
+.about-paragraph{
     margin-bottom: 10em;
+    width: 55%;
+    font-size: 2em;
 }
 
 /* div p{
