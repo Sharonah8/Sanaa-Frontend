@@ -6,9 +6,11 @@ function GalleryList({images}) {
     <div>
         {images.map((img)=>{
           return(
-            <Gallery key={img} img={img} />
-          );
+            <Gallery key={img}img={img} />
+          )
         })
+        
+       
         }
    
     </div>

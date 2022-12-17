@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AddGallery from "./AddGallery";
 import GalleryList from "./GalleryList"
 
 
@@ -17,6 +18,7 @@ function MainGallery() {
     
     <div className="main-gallery">
       <GalleryList images = {images}/>
+      <AddGallery />
     </div>
   )
 }
