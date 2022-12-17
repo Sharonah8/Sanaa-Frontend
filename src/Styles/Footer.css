@@ -1,7 +1,21 @@
-/* .Footer{
+*{
     background-color: black;
-} */
-
-/* .App {
+    color: white;
     text-align: center;
-  } */
+}
+
+footer h2{
+    font-size: 30px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+footer url{
+    margin: 2em;
+}
+
+SocialIcon{
+    margin: 4em;
+}
