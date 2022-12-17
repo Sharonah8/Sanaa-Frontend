@@ -1,9 +1,8 @@
-*{
-    /* background-color: black; */
+/* *{
     color: white;
     text-align: center;
     margin-bottom: 1em;
-}
+} */
 
 footer{
     background-image: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwYXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); 
@@ -12,11 +11,17 @@ footer{
     background-size: cover; 
 }
 
-footer h2{
+.footer-heading{
+    color: white;
     font-size: 30px;
     padding-top: 1.2em;
 }
 
-footer p{
+.footer-paragraph{
     font-size: 20px;
+    color: white;
+}
+
+.footer-el{
+    text-align: center;
 }

@@ -4,10 +4,15 @@ import "../Styles/Footer.css";
 
 function Footer() {
   return (
-    <footer>
-      <h2>The journey is the reward</h2>
-      <p>Live Intentionally . Live Authentically</p>
-      <SocialIcon url="https://twitter.com/jaketrent" style={{ margin: 10 }} />
+    <footer className="footer-el">
+      <h2 className="footer-heading">The journey is the reward</h2>
+      <p className="footer-paragraph">
+        Live Intentionally . Live Authentically
+      </p>
+      <SocialIcon
+        url="https://twitter.com/jaketrent"
+        style={{ margin: 10 }}
+      />
       <SocialIcon
         url="https://linkedin.com/in/jaketrent"
         style={{ margin: 10 }}
@@ -20,6 +25,7 @@ function Footer() {
         url="https://instagram.com/in/jaketrent"
         style={{ margin: 10 }}
       />
+      
     </footer>
   );
 }
