@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:  white
+    background:  #151515;
 }
 .container{
     position: relative;
@@ -106,6 +106,8 @@ body{
 .popup-view {
     opacity:1;
     visibility: visible;
+    /* background:  #151515;
+    color: white; */
 }
 
 .product .popup-card{
