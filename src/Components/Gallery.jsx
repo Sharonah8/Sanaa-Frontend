@@ -7,17 +7,17 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
-import Slide from '@mui/material/Slide';
-import { TransitionProps } from '@mui/material/transitions';
+// import Slide from '@mui/material/Slide';
+// import { TransitionProps } from '@mui/material/transitions';
 
-const Transition = React.forwardRef(function Transition(
-  props: TransitionProps & {
-    children: React.ReactElement;
-  },
-  ref: React.Ref<unknown>,
-) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+// const Transition = React.forwardRef(function Transition(
+//   props: TransitionProps & {
+//     children: React.ReactElement;
+//   },
+//   ref: React.Ref<unknown>,
+// ) {
+//   return <Slide direction="up" ref={ref} {...props} />;
+// });
 
 
 
@@ -47,7 +47,7 @@ function Gallery({img}) {
         fullScreen
         open={open}
         onClose={handleClose}
-        TransitionComponent={Transition}
+        // TransitionComponent={Transition}
       >
         <AppBar sx={{ position: 'relative' }}>
           <Toolbar>
@@ -63,7 +63,7 @@ function Gallery({img}) {
               About This Potrait
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
-              save
+              Back
             </Button>
           </Toolbar>
         </AppBar>
