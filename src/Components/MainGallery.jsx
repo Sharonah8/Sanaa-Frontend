@@ -18,7 +18,7 @@ function MainGallery() {
     
     <div className="main-gallery">
       <GalleryList images = {images}/>
-      <AddGallery />
+      <AddGallery  />
     </div>
   )
 }
