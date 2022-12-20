@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Review from "./Review";
 import Button from '@mui/material/Button';
 import '../Styles/Gallery.css'
 import Dialog from '@mui/material/Dialog';
@@ -50,7 +51,7 @@ function Gallery({img}) {
         // TransitionComponent={Transition}
       >
         <AppBar sx={{ position: 'relative' }}>
-          <Toolbar>
+          <Toolbar id ='toolbar'>
             <IconButton
               edge="start"
               color="inherit"
@@ -60,7 +61,7 @@ function Gallery({img}) {
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              About This Potrait
+             <i><u>About This Potrait</u></i> 
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
               Back
@@ -70,22 +71,23 @@ function Gallery({img}) {
 
 
             <div className='popup-view'>
-              <div className='popup-card'>
-                <div className='product-img'>
+              <div className='popup-card-inner'>
+                <div className='product-img-inner'>
                   <img src={img.image} alt=''width={400} height={500} ></img>
                 </div>
-                <div className='info'>
-                  <h2>{img.title}<br/><span>Potrait</span></h2>
-                  <p>{img.description}</p>
-                  <span className="price">{img.price}</span>
+                <div className='info-inner'>
+                  <h2 id='info-inner-h2' >{img.title}.<br/><span id='info-inner-h2-span'><u>info:-</u></span></h2>
+                  <p id='info-inner-desc'>{img.description}</p>
+                  <p id = 'info-inner-price'>{img.price}.</p>
                   {/* <a href="#" className='add-cart-btn'>Add to Cart</a>
                   <a href="#" className='add-wish'>Add to Wishlist</a> */}
+                   <Review  />
                 </div>
               </div>
             </div> 
             </Dialog>  
+           
          </div>
-         
        </div>  
 
          
