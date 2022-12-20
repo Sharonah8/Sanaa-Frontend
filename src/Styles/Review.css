@@ -1,0 +1,15 @@
+input[type="radio"] {
+    display: none;
+}
+.star{
+    cursor: pointer;
+    transition: color 200ms;
+}
+.review-stars{
+    margin-left: 30%;
+    margin-top: 6%;
+}
+#rating-p{
+    margin-left: -7%;
+    margin-top: 6%;
+}
