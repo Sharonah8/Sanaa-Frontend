@@ -11,7 +11,7 @@ function Footer() {
       </p>
       <SocialIcon
         url="https://twitter.com/jaketrent"
-        style={{ margin: 10 }}
+        style={{ margin: 10  }}
       />
       <SocialIcon
         url="https://linkedin.com/in/jaketrent"
