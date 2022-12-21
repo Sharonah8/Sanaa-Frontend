@@ -1,16 +1,17 @@
 import React from 'react'
-import {useState, useNavigate} from 'react'
+import {useState} from 'react'
+import './LogIn.css';
 
 function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(email, password);
     
-    fetch("/login", {
+    fetch("", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +24,7 @@ function LogIn() {
       
       if (r.ok) {
         r.json().then(() => {
-          navigate("/Gallery")
+          // navigate("/Gallery")
 
         });
       } else {
@@ -33,37 +34,46 @@ function LogIn() {
   };
 
   return (
+    <div className='box'>
     <div className="form">
       <form onSubmit={handleSubmit}>
+        <div><h2>Login</h2></div>
         <div className="input-group">
-          <label htmlFor="email">Email</label>
           <input
             type="email"
+            required="required"
             id="username"
             autoComplete="off"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="nome@email.com.br"
+            placeholder="Enter registered email"
           />
+          <i></i>
         </div>
         <div className="input-group">
-          <label htmlFor="password">Password</label>
           <input
             type="password"
+            required="required"
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             name="password"
+            placeholder='Enter password'
           />
+          <i></i>
         </div>
-        <button
+        <div className='links'>
+        <a href="">Forgot password?</a>
+        <a href="">Sign Up</a>
+        </div>
+        <input
           type="submit"
-          className="primary"
+          value="Login"
           onClick={() => handleSubmit()}
-        >
+        />
           
-        </button>
       </form>
+    </div>
     </div>
   );
 };
