@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Dismas",
+      "email": "dc@gmail.com",
+      "password": "1234"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "username": "mike",
+      "email": "mike@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "username": "mike",
+      "email": "mike@gmail.com",
+      "password": "1234567676767",
+      "id": 5
+    },
+    {
+      "username": "mike",
+      "email": "mike@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "username": "asd",
+      "email": "asd@asd.com",
+      "password": "1234567",
+      "id": 7
+    }
+  ]
+}
