@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import LogIn from "./LogIn";
 import "./SignUp.css";
 
@@ -8,6 +8,7 @@ function SignUp() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [welcomeMessage, setWelcomeMessage] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,6 +19,7 @@ function SignUp() {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    setWelcomeMessage(true)
     
     let apiUrl = "http://localhost:3000/users"
     fetch(apiUrl,{
@@ -61,6 +63,7 @@ function SignUp() {
     <div className="box">
        <div className="form">
         <form onSubmit={handleSubmit}>
+        {welcomeMessage ? <div className='p-3 mb-2 bg-success text-white welcome-message'>{`Hello ${formValues.username}, your registration is successful`}</div> : null}
             <div><h2>New Member Registration</h2></div>
             <div className="input-group">
                 <input
