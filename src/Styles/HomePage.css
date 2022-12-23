@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&display=swap");
+
+.home-page{
+ background-image: url("../Images/black-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.home-page-container {
+  position: absolute;
+  top: 20%;
+  color: white;
+  font-family: "Comic Neue";
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 1%;
+}
+
+.centered-text {
+  position: relative;
+  left: 5%;
+  font-size: 20px;
+  width: 90%;
+}
+.overlay-image > img{
+  border-radius: 50%;
+  height:300px;
+  width:300px;
+}
+
+button {
+  margin-top: 5%;
+  font-size: 24px;
+  border-radius: 15px;
+  font-family: 'Comic Neue';
+  background-color: rgb(237, 207, 13);
+}
+
+.footer-section{
+  border: solid 30px red;
+}
+
