@@ -32,10 +32,13 @@ function NavBar() {
           <Link class="nav-link text-light" to="/AddGallery">AddGallery</Link>
           </li>
           <li class="nav-item">
-          <Link class="nav-link text-light" to="/LogIn">LogIn</Link>
+          <Link class="nav-link text-light" to="/LogIn"><button id='nav-btn-login'>LogIn</button></Link>
+          {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */}
           </li>
           <li class="nav-item">
-          <Link class="nav-link text-light" to="/SignUp">SignUp</Link>
+          <Link class="nav-link text-light" to="/SignUp"><button id='nav-btn-login'>SignUp</button></Link>
+
+          {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */}
           </li>
         </ul>
       </div>

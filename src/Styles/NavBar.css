@@ -1,0 +1,14 @@
+#nav-btn-login {
+    background-color: rgb(77, 76, 76);
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+
+#nav-btn-login:hover {
+    background-color: white;
+    color: black;
+    /* transform: scale(1.1);  */
+    transition: ease-in-out .4s
+}
