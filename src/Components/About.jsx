@@ -6,7 +6,7 @@ function About() {
     <div className="about-el">
       <img className="about-img"
         src="https://i.pinimg.com/736x/3f/bc/5b/3fbc5bbb906330d0985f006854f48236.jpg"
-        alt="image"
+        alt="africanimage"
       />
       <h1 className="about-heading">About Us</h1>
       <p className="about-paragraph">
