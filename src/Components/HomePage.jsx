@@ -1,13 +1,10 @@
 import React from 'react';
 import "../Styles/HomePage.css";
-import NavBar from './NavBar';
-import SecondImage from "../Images/round-tree.jpg";
-import Footer from "./Footer"
+
 
 function HomePage() {
   return (
     <main>
-      <NavBar />
       <div className='home-page'>
         <div className='home-page-container'>
           <div className='centered-text'>
@@ -20,9 +17,6 @@ function HomePage() {
           
           </div>
         </div>
-      </div>
-      <div classname="footer-section">
-        <Footer />
       </div>
     </main>
   )
