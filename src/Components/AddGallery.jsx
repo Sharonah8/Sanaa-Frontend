@@ -4,10 +4,17 @@ import { Link } from 'react-router-dom';
 
 function AddGallery() {
   const [data, setData] = useState([]);
-
+  
   useEffect(() => {
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title: 'React POST Request Example' })
+    };
+
     // fetch("http://localhost:3000/images")
-    fetch("")
+    fetch("http://localhost:3003/images", requestOptions)
     .then((res) => res.json())
     .then((data => setData(data)));
   }, [])
