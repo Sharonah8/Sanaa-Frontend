@@ -13,9 +13,9 @@
 
 .about-img{
     float: right;
-    padding-right: 5em;
+    padding-right: 7em;
     height: 32em;
-    width: 28em;
+    width: 40em;
     position: relative;
 }
 
@@ -24,7 +24,7 @@
     color: white;
     /* margin-top: 8em; */
     font-size: 4em;
-    padding-left: 8.5em;
+    padding-left: 7em;
 }
 
 .about-paragraph{
