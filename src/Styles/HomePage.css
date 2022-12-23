@@ -9,6 +9,15 @@
   position: relative;
 }
 
+.home-page-heading{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.home-page-paragraph{
+  font-size: 1.5em;
+}
+
 .home-page-container {
   position: absolute;
   top: 20%;
