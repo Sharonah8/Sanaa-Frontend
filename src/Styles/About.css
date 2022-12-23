@@ -13,7 +13,7 @@
 
 .about-img{
     float: right;
-    padding-right: 5em;
+    padding-right: 7em;
     height: 32em;
     width: 28em;
     position: relative;
@@ -41,9 +41,6 @@
     }
     .about-heading{
         max-width: 90%;
-        /* margin-right: 55%;
-        margin-top: 60%;
-        margin-left: 1%; */
         padding-left: 20%;
     }
 }

@@ -6,12 +6,12 @@ function About() {
     <div className="about-el">
       <img
         className="about-img"
-        src="https://i.pinimg.com/originals/30/e7/0a/30e70a15bdff08c1f4b6b4d6e8871c7d.png"
+        src="https://i.pinimg.com/736x/3f/bc/5b/3fbc5bbb906330d0985f006854f48236.jpg"
         alt="monalisa"
       />
       <h1 className="about-heading">About Us</h1>
       <p className="about-paragraph">
-        Sanaa is an e-commerce platform designed to host classic art peices. It
+        Sanaa is an e-commerce platform designed to host classic art pieces. It
         seeks to bridge the gap between local and international artists and
         their customers. It provides a platform for them to interact and buy and
         sell their art pieces without the need for a middle-man, thus promoting
