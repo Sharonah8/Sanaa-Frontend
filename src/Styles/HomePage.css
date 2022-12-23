@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Poppins&display=swap");
 
-.home-page{
- background-image: url("../Images/black-bg.png");
+.home-page {
+  background-image: url("../Images/black-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,25 +21,39 @@
 
 .centered-text {
   position: relative;
-  left: 5%;
+  left: 15%;
   font-size: 20px;
   width: 90%;
 }
-.overlay-image > img{
-  border-radius: 50%;
-  height:300px;
-  width:300px;
+.home-page-img {
+  margin-left: 30%;
+  height: 450px;
+  width: 380px;
 }
 
-button {
-  margin-top: 5%;
-  font-size: 24px;
+#home-page-btn {
+  margin-top: 10%;
+  font-size: 15px;
+  padding: 5px; 
+  background-color: rgb(77, 76, 76);
+  color: white;
   border-radius: 15px;
-  font-family: 'Comic Neue';
-  background-color: rgb(237, 207, 13);
+  font-weight: bold;
 }
 
-.footer-section{
+#home-page-btn:hover {
+  background-color: white;
+  color: black;
+  /* transform: scale(1.1);  */
+  transition: ease-in-out 0.4s;
+}
+
+.footer-section {
   border: solid 30px red;
 }
 
+@media (max-width: 1280px) {
+  .home-page-img {
+    margin-right: 23%;
+  }
+}
