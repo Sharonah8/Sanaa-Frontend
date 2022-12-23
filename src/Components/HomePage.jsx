@@ -17,7 +17,7 @@ function HomePage() {
           </div>
           <div classname='overlay'>
             <img className='home-page-img' src="https://i.ibb.co/1nwd6B3/909b68afdf7ca5550fa298dc06657ab0.jpg"  alt="image" />
-            {/* <p>round image</p> */}
+          
           </div>
         </div>
       </div>
