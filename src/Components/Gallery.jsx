@@ -39,8 +39,8 @@ function Gallery({img}) {
        <div className='container'>
          <div className='product'>
            <div className='product-card'>
-             <h2 className='name'>{img.title}</h2>
-               <span className='price'>{img.price}</span>
+             <h2 className='product-name'>{img.title}</h2>
+               <span className='product-price'>{img.price}</span>
                 <button className='popup-btn'onClick={handleClickOpen} >Quick View</button>
                  <img src={img.image} className="product-img" alt='product-img' width={299} height={320}></img>     
             </div>
@@ -79,8 +79,8 @@ function Gallery({img}) {
                   <h2 id='info-inner-h2' >{img.title}.<br/><span id='info-inner-h2-span'><u>info:-</u></span></h2>
                   <p id='info-inner-desc'>{img.description}</p>
                   <p id = 'info-inner-price'>{img.price}.</p>
-                  {/* <a href="#" className='add-cart-btn'>Add to Cart</a>
-                  <a href="#" className='add-wish'>Add to Wishlist</a> */}
+                   <a href="#" className='add-cart-btn'>Add to Cart</a>
+                 
                    <Review  />
                 </div>
               </div>
