@@ -1,8 +1,10 @@
 import React from "react";
+import Footer from './Footer';
 import "../Styles/About.css";
 
 function About() {
   return (
+  <div className="about-page">
     <div className="about-el">
       <img className="about-img"
         src="https://i.pinimg.com/736x/3f/bc/5b/3fbc5bbb906330d0985f006854f48236.jpg"
@@ -17,6 +19,8 @@ function About() {
         the artists and providing a safe platform for transaction between the
         artists and the buyers.
       </p>
+    </div>
+    <Footer />
     </div>
   );
 }
