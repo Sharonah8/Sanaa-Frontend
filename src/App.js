@@ -9,20 +9,11 @@ import AddGallery from './Components/AddGallery';
 import Footer from './Components/Footer';
 import LogIn from './Components/LogIn';
 import Signup from './Components/SignUp';
-
-
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import LogIn from './Components/LogIn';
-import SignUp from './Components/SignUp';
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-// import LogIn from './Components/LogIn';
-// import SignUp from './Components/SignUp'
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
       <NavBar />
 
       <Routes>
@@ -34,16 +25,6 @@ function App() {
         <Route exact path="/signup" element={<Signup />} />
       </Routes>
       
-      
-=======
-      <h1>Sanaa</h1>
-      <SignUp />
-      {/* <LogIn /> */}
-      {/* <Routes>
-        <Route exact path="/" element={<LogIn />} />
-        <Route path="/Login" element={<SignUp />} />
-      </Routes> */}
->>>>>>> ft-login
     </div>
   );
 }
