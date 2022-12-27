@@ -64,10 +64,7 @@ body{
 } */
 
 /*styles for product cards */
-.product{
-    float: left;
-}
-.product-card{
+.product .product-card{
   z-index: 1;
   background: #1D212B;
   position: relative;
@@ -76,7 +73,12 @@ body{
   margin: 40px;
   border-radius: 10px;
   text-align: center;
-  margin-left: 49%;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  float: left;
+  margin-left: 7%;
+  
 }
 .product .product-card::before{
  content: '';
