@@ -1,0 +1,11 @@
+.search-bar{
+    margin:1rem 0;
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius:1rem;
+    padding: 0.3rem 1rem;
+    margin-left: 37%;
+    background-color: rgb(207, 215, 223);
+}
