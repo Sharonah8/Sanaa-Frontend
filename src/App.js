@@ -9,8 +9,7 @@ import AddGallery from './Components/AddGallery';
 import Footer from './Components/Footer';
 import LogIn from './Components/LogIn';
 import Signup from './Components/SignUp';
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -25,8 +24,7 @@ function App() {
         <Route exact path="/login" element={<LogIn />} />
         <Route exact path="/signup" element={<Signup />} />
       </Routes>
-      
-      
+      {/* <Footer/> */}
     </div>
   );
 }
