@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import './LogIn.css';
+import '../Styles/LogIn.css';
 
 function LogIn() {
   const [email, setEmail] = useState("");
@@ -69,7 +69,7 @@ function LogIn() {
         <input
           type="submit"
           value="Login"
-          onClick={() => handleSubmit()}
+          onClick={handleSubmit}
         />
           
       </form>

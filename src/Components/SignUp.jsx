@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
-import LogIn from "./LogIn";
-import "./SignUp.css";
+// import LogIn from "./LogIn";
+import "../Styles/SignUp.css";
+// import { NavLink } from 'react-router-dom'
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
@@ -14,28 +14,37 @@ function SignUp() {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
+  // const valid = () => {
+  //   return formValues.username.length & formValues.email.length;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
     setWelcomeMessage(true)
+    // e.target.reset();
+    // setFormValues('')
     
     let apiUrl = "http://localhost:3000/users"
     fetch(apiUrl,{
       method: "POST",
       headers:  {'Content-Type': 'application/json'},
       body: JSON.stringify(formValues)
+    }).then((r) => {
+      if (r.ok) {
+        r.json().then(() => {
+          // setFormValues('')
+
+        });
+      }
     })
-    // .then(()=>{
-    //     setFormValues('')
-    // })
   };
 
   useEffect(() => {
-    console.log(formErrors);
+    // console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
+      // console.log(formValues);
     }
   }, [formErrors]);
   const validate = (values) => {
@@ -108,12 +117,14 @@ function SignUp() {
             <input
                 type="submit"
                 value="Register"
-                onClick={() => handleSubmit()}
+                onClick={handleSubmit}
+                // disabled={!valid()}
             />
        </div>
        <br />
        <div>
-          <p>Already have account? <button type="submit" onClick={<LogIn />} value='Back to Login'> </button></p>
+          <p>Already have account?</p>
+           {/* <p><NavLink to='/LogIn'>Login</NavLink></p> */}
        </div>
       </form>
       </div>
