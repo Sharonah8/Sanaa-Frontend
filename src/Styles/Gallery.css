@@ -1,28 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-}
+
+
 body{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background:  #151515;
 }
 .container{
-    -webkit-animation-duration: 6s;
-    -webkit-animation-name: slidein;
-    float: left;
+    /* -webkit-animation-duration: 6s;
+    -webkit-animation-name: slidein; */
     margin-left: -14%;
     padding-left: 20%;
- 
+    font-family: "Poppins", sans-serif; 
 
-  
 
 }
- @-webkit-keyframes slidein {
+ /* @-webkit-keyframes slidein {
             from {
                 margin-left: 100%;
                 width: 300%;
@@ -66,10 +58,10 @@ body{
                 margin-left: 0%;
                 width: 100%;
             }
-        }
-.container:hover{
+        } */
+/* .container:hover{
     transform: scale(1.1);
-}
+} */
 
 /*styles for product cards */
 .product .product-card{
@@ -80,6 +72,13 @@ body{
   height: 400px;
   margin: 40px;
   border-radius: 10px;
+  text-align: center;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  float: left;
+  margin-left: 7%;
+  
 }
 .product .product-card::before{
  content: '';
@@ -101,23 +100,24 @@ body{
  left: 50%;
  transform: translate(-50%, -50%);
 }
-.product .product-card .name{
+.product .product-card .product-name{
  z-index: 2;
  color: #fff;
  position:absolute;
  width: 100%;
  text-align: center;
- bottom: 50px;
+ bottom: 52px;
+ font-weight: bolder;
  font-size: 20px;
  letter-spacing: 1px;
 }
-.product .product-card .price{
+.product .product-card .product-price{
     z-index: 2;
     color: #fff;
     position:absolute;
     width: 100%;
     text-align: center;
-    bottom: 30px;
+    bottom: 35px;
     font-size: 20px;
     letter-spacing: 1px;
 
