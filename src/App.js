@@ -14,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import LogIn from './Components/LogIn';
 // import SignUp from './Components/SignUp'
 
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

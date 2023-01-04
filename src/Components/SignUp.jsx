@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-// import LogIn from "./LogIn";
-import Footer from './Footer';
-import "../Styles/SignUp.css";
-// import { NavLink } from 'react-router-dom'
+
+import { Link } from "react-router-dom";
+import LogIn from "./LogIn";
+import Footer from "./Footer";
+import '../Styles/SignUp.css'
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
@@ -23,23 +24,17 @@ function SignUp() {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    setWelcomeMessage(true)
-    // e.target.reset();
-    // setFormValues('')
-    
-    let apiUrl = "http://localhost:3000/users"
-    fetch(apiUrl,{
-      method: "POST",
-      headers:  {'Content-Type': 'application/json'},
-      body: JSON.stringify(formValues)
-    }).then((r) => {
-      if (r.ok) {
-        r.json().then(() => {
-          // setFormValues('')
+    setWelcomeMessage(true);
 
-        });
-      }
-    })
+    let apiUrl = "http://localhost:3000/users";
+    fetch(apiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formValues),
+    });
+    // .then(()=>{
+    //     setFormValues('')
+    // })
   };
 
   useEffect(() => {
@@ -71,34 +66,38 @@ function SignUp() {
 
   return (
     <div className="signup-main">
-    <div className="box">
-       <div className="form">
-        <form onSubmit={handleSubmit}>
-        {welcomeMessage ? <div className='p-3 mb-2 bg-success text-white welcome-message'>{`Hello ${formValues.username}, your registration is successful`}</div> : null}
-            <div><h2>New Member Registration</h2></div>
+      <div className="box">
+        <div className="form">
+          <form onSubmit={handleSubmit}>
+            {welcomeMessage ? (
+              <div className="p-3 mb-2 bg-success text-white welcome-message">{`Hello ${formValues.username}, your registration is successful`}</div>
+            ) : null}
+            <div>
+              <h2>Registration</h2>
+            </div>
             <div className="input-group">
-                <input
-                    type="text"
-                    name="username"
-                    placeholder="Username"
-                    value={formValues.username}
-                    onChange={handleChange}
-                    required
-                />
-                <i></i>
-          </div>
-          <p>{formErrors.username}</p>
-          
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                value={formValues.username}
+                onChange={handleChange}
+                required
+              />
+              <i id="loginlines"></i>
+            </div>
+            <p>{formErrors.username}</p>
+
             <div className="input-group">
-                <input
-                    type="text"
-                    name="email"
-                    placeholder="Email"
-                    value={formValues.email}
-                    onChange={handleChange}
-                    required
-                />
-                <i></i>
+              <input
+                type="text"
+                name="email"
+                placeholder="Email"
+                value={formValues.email}
+                onChange={handleChange}
+                required
+              />
+              <i id="loginlines"></i>
             </div>
           <p>{formErrors.email}</p>
           
@@ -110,30 +109,34 @@ function SignUp() {
                 value={formValues.password}
                 onChange={handleChange}
                 required
-            />
-            <i></i>
-          </div>
-          <p>{formErrors.password}</p>
-          
-          <div className="input-group">
-            <input
+              />
+              <i id="loginlines"></i>
+            </div>
+            <p>{formErrors.password}</p>
+
+            <div className="input-group">
+              <input
                 type="submit"
                 value="Register"
-                onClick={handleSubmit}
-                // disabled={!valid()}
-            />
-       </div>
-       <br />
-       <div>
-          <p>Already have account?</p>
-           {/* <p><NavLink to='/LogIn'>Login</NavLink></p> */}
-       </div>
-      </form>
+                onClick={() => handleSubmit()}
+                id = 'signupbtn'
+              />
+            </div>
+            <br />
+            <div>
+              <Link to={"/login"}>
+                <span id="login-section">
+                  {" "}
+                  Have an account already ? Login{" "}
+                </span>
+              </Link>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
 
     <Footer />
     </div>
   );
 }
-export default SignUp
+export default SignUp;

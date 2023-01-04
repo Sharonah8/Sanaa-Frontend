@@ -20,7 +20,28 @@
       "price": "$150.00",
       "image": "https://i.ibb.co/5WD3bPC/odes-by-queens-kenyan-album-artwork-waithaka-ent.jpg",
       "description": "The Awakening  inspired Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-      }
+      },
+      {
+        "id": 4,
+        "title": "The Potrait",
+        "price": "$120.00",
+        "image": "https://i.ibb.co/CwSNpnP/56-242839-edosa-ogiugo-merry-hearts-2013-14-126-9-cm-x-100-cm-charcoal-and-oil-on-canvas.jpg",
+        "description": "The potriat inspired by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+      },
+      {
+        "id": 5,
+        "title": "The Darkening",
+        "price": "$110.00",
+        "image": "https://i.ibb.co/TcZxGf2/9a9526a988ebdd85b119b5b48f4c5845.jpg",
+        "description": "The Darkening inspired by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        },
+        {
+        "id": 6,
+        "title": "The Awakening",
+        "price": "$150.00",
+        "image": "https://i.ibb.co/5WD3bPC/odes-by-queens-kenyan-album-artwork-waithaka-ent.jpg",
+        "description": "The Awakening  inspired Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        }
       
   ]
 }

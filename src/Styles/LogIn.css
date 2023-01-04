@@ -1,12 +1,58 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap'); */
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #23242a;
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
+.login-main
+{
+    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597'); 
+}
+.box 
+{
+	position: relative;
+	width: 380px;
+	height: 420px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50%;
+}
+.box::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,green,purple);
+	animation: animate 6s linear infinite;
+}
+.box::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	/* left: -50%; */
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,orange,black);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
 .box {
     position: relative;
     align-items: center;
@@ -32,6 +78,7 @@
     position: absolute;
     inset: 2px;
     border-radius: 8px;
+    background: #28292d;
     background: rgb(77, 76, 76);
     z-index: 10;
     padding: 50px 40px;
@@ -65,6 +112,12 @@
     letter-spacing: 0.05em;
     z-index: 10;
     border-radius: 5px;
+    margin-left: -8%;
+}
+#loginlines{
+    background-color: white;
+    padding: 1%;
+    margin-left: -6%;
 }
 .input-group i {
     position: absolute;
@@ -88,6 +141,7 @@
 .links a {
     margin: 10px 0;
     font-size: 00.95em;
+    color: #8f8f8f;
     color: white;
     text-decoration: none;
 }
@@ -98,6 +152,21 @@
     color: white;
 
 }
+#loginbtn{
+    background-color: rgb(77, 76, 76);
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 12%;
+    margin-bottom: 30px;
+    margin-left: 28%;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+  
+
 input[type='submit'] {
     /* border: none;
     outline: none; */
@@ -109,11 +178,25 @@ input[type='submit'] {
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
-    color: #fff;
 }
+
 input[type='submit']:hover {
+
+    color: white;
+}
+
+  
+#loginbtn:hover {
     background-color: white;
     color: black;
     /* transform: scale(1.1);  */
     transition: ease-in-out 0.4s;
-  }
+}
+#login-section{
+    color: white;
+    margin-left: 20%;
+}
+#fptext{
+    margin-left: 5%;
+
+}

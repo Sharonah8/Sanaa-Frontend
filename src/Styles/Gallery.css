@@ -4,6 +4,11 @@
 body{
 
     background:  #151515;
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/2-african-huts-anthony-mwangi.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-top: 10%;
+
 }
 .container{
     /* -webkit-animation-duration: 6s;
@@ -78,6 +83,7 @@ body{
   grid-template-columns: auto auto auto;
   float: left;
   margin-left: 7%;
+  background-image: url('https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/nature-home-ephraim-ojike.jpg'); 
   
 }
 .product .product-card::before{
@@ -91,6 +97,7 @@ body{
  height: 100%;
  border-top-left-radius:10px ;
  border-bottom-left-radius:10px ;
+ 
 }
 .product .product-card .product-img{
  z-index: 1;
@@ -152,6 +159,8 @@ body{
     align-items: center;
     opacity:0;
     visibility: hidden;
+    
+    
 
 }
 
@@ -160,6 +169,10 @@ body{
     visibility: visible;
     /* background:  #151515;
     color: white; */
+    background-image: url('https://www.ctm.co.ke/media/catalog/product/cache/962f0fa93f6ebc4f041fe71bedef3e3f/m/i/mika-slate-wall-cladding-tile-95x300-ls1.jpg'); 
+    background-size: cover; 
+    height: 736px;
+
 }
 #toolbar{
     background-color: rgb(52, 49, 49);
@@ -171,6 +184,8 @@ body{
     width:800px ;
     height: 500px;
     margin: 20px;
+    
+    
 }
 .product .popup-card .product-img {
     z-index: 2;
@@ -180,6 +195,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 45%;
+    
 }
 .product .popup-card .product-img img {
     z-index: 2;
