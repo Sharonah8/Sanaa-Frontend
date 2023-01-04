@@ -13,9 +13,10 @@
     transition: ease-in-out .4s
 }
 
-img{
+#img-mini{
     width: 173px;
     height: 50px;
     margin-left: 2.2cm;
     object-fit: cover;
+  
 }
