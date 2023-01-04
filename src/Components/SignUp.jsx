@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LogIn from "./LogIn";
 import Footer from "./Footer";
-import "./SignUp.css";
+import '../Styles/SignUp.css'
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
@@ -69,7 +69,7 @@ function SignUp() {
               <div className="p-3 mb-2 bg-success text-white welcome-message">{`Hello ${formValues.username}, your registration is successful`}</div>
             ) : null}
             <div>
-              <h2>New Member Registration</h2>
+              <h2>Registration</h2>
             </div>
             <div className="input-group">
               <input
@@ -80,7 +80,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.username}</p>
 
@@ -93,7 +93,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.email}</p>
 
@@ -106,7 +106,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.password}</p>
 
@@ -115,16 +115,17 @@ function SignUp() {
                 type="submit"
                 value="Register"
                 onClick={() => handleSubmit()}
+                id = 'signupbtn'
               />
             </div>
             <br />
             <div>
-              <p>
-                Already have account?{" "}
-                <button type="submit" onClick={<LogIn />} value="Back to Login">
+              <Link to={"/login"}>
+                <span id="login-section">
                   {" "}
-                </button>
-              </p>
+                  Have an account already ? Login{" "}
+                </span>
+              </Link>
             </div>
           </form>
         </div>
