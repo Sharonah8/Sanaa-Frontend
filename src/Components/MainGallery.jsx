@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Search from "./Search";
-import GalleryList from "./GalleryList"
-
+import GalleryList from "./GalleryList";
 
 function MainGallery() {
   const [images, setImages] = useState([]);
@@ -12,7 +11,6 @@ function MainGallery() {
       .then((resp) => {
         setImages(resp);
         setSearchValue(resp);
-       
       });
   }, []);
 
@@ -25,12 +23,11 @@ function MainGallery() {
   }
 
   return (
-    
     <div className="main-gallery">
       <Search change={change} />
-      <GalleryList images = {images}/>
+      <GalleryList images={images} />
     </div>
-  )
+  );
 }
 
-export default MainGallery
+export default MainGallery;
