@@ -24,12 +24,13 @@
     color: white;
     /* margin-top: 8em; */
     font-size: 4em;
-    padding-left: 7em;
+    padding-left: 5.5em;
 }
 
 .about-paragraph{
     /* margin-bottom: 10em; */
     width: 55%;
+    font-family: "Comic Neue";
     font-size: 2em;
     padding-left: 5em;
 }

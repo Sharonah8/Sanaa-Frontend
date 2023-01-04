@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LogIn from "./LogIn";
 import Footer from "./Footer";
+<<<<<<< HEAD
 import "../Styles/SignUp.css";
+=======
+import '../Styles/SignUp.css'
+>>>>>>> development2
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
@@ -15,6 +19,9 @@ function SignUp() {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
+  // const valid = () => {
+  //   return formValues.username.length & formValues.email.length;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,9 +41,9 @@ function SignUp() {
   };
 
   useEffect(() => {
-    console.log(formErrors);
+    // console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
+      // console.log(formValues);
     }
   }, [formErrors]);
   const validate = (values) => {
@@ -69,7 +76,7 @@ function SignUp() {
               <div className="p-3 mb-2 bg-success text-white welcome-message">{`Hello ${formValues.username}, your registration is successful`}</div>
             ) : null}
             <div>
-              <h2>New Member Registration</h2>
+              <h2>Registration</h2>
             </div>
             <div className="input-group">
               <input
@@ -80,7 +87,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.username}</p>
 
@@ -93,7 +100,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.email}</p>
 
@@ -106,7 +113,7 @@ function SignUp() {
                 onChange={handleChange}
                 required
               />
-              <i></i>
+              <i id="loginlines"></i>
             </div>
             <p>{formErrors.password}</p>
 
@@ -115,16 +122,17 @@ function SignUp() {
                 type="submit"
                 value="Register"
                 onClick={() => handleSubmit()}
+                id = 'signupbtn'
               />
             </div>
             <br />
             <div>
-              <p>
-                Already have account?{" "}
-                <button type="submit" onClick={<LogIn />} value="Back to Login">
+              <Link to={"/login"}>
+                <span id="login-section">
                   {" "}
-                </button>
-              </p>
+                  Have an account already ? Login{" "}
+                </span>
+              </Link>
             </div>
           </form>
         </div>

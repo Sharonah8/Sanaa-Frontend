@@ -6,7 +6,7 @@ import HomePage from './Components/HomePage';
 import About from './Components/About';
 import MainGallery from './Components/MainGallery';
 import AddGallery from './Components/AddGallery';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import LogIn from './Components/LogIn';
 import Signup from './Components/SignUp';
 import "bootstrap/dist/css/bootstrap.min.css";
