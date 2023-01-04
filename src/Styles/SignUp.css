@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
-body{
-    /* display: flex;
-    justify-content: center; */
+.signup-main{
+    /* display: flex; */
+    justify-content: center;
 }
 
 .box {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* position: relative; */
     width: 480px;
     height: 620px;

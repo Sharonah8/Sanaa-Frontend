@@ -9,6 +9,7 @@
 
 .box {
     position: relative;
+    align-items: center;
     width: 380px;
     height: 420px;
     border-radius: 8px;
@@ -108,4 +109,11 @@ input[type='submit'] {
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+    color: #fff;
 }
+input[type='submit']:hover {
+    background-color: white;
+    color: black;
+    /* transform: scale(1.1);  */
+    transition: ease-in-out 0.4s;
+  }
