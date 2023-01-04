@@ -1,25 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body{
-
-    background:  #151515;
-    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/2-african-huts-anthony-mwangi.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover; 
-    margin-top: 10%;
-
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/2-african-huts-anthony-mwangi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.container{
-    /* -webkit-animation-duration: 6s;
+.container {
+  /* -webkit-animation-duration: 6s;
     -webkit-animation-name: slidein; */
-    margin-left: -14%;
-    padding-left: 20%;
-    font-family: "Poppins", sans-serif; 
-
-
+  margin-left: -14%;
+  padding-left: 20%;
+  font-family: "Poppins", sans-serif;
 }
- /* @-webkit-keyframes slidein {
+/* @-webkit-keyframes slidein {
             from {
                 margin-left: 100%;
                 width: 300%;
@@ -69,9 +61,9 @@ body{
 } */
 
 /*styles for product cards */
-.product .product-card{
+.product .product-card {
   z-index: 1;
-  background: #1D212B;
+  background: #1d212b;
   position: relative;
   width: 300px;
   height: 400px;
@@ -83,269 +75,247 @@ body{
   grid-template-columns: auto auto auto;
   float: left;
   margin-left: 7%;
-  background-image: url('https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/nature-home-ephraim-ojike.jpg'); 
-  
+  background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/nature-home-ephraim-ojike.jpg");
 }
-.product .product-card::before{
- content: '';
- background: rgba(255, 255, 255, 0.1);
- position: absolute;
- display: block;
- top: 0;
- left: 0;
- width: 50%;
- height: 100%;
- border-top-left-radius:10px ;
- border-bottom-left-radius:10px ;
- 
+.product .product-card::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.product .product-card .product-img{
- z-index: 1;
- position: absolute;
- max-width: 350px;
- top: 40%;
- left: 50%;
- transform: translate(-50%, -50%);
+.product .product-card .product-img {
+  z-index: 1;
+  position: absolute;
+  max-width: 350px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.product .product-card .product-name{
- z-index: 2;
- color: #fff;
- position:absolute;
- width: 100%;
- text-align: center;
- bottom: 52px;
- font-weight: bolder;
- font-size: 20px;
- letter-spacing: 1px;
+.product .product-card .product-name {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 52px;
+  font-weight: bolder;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
-.product .product-card .product-price{
-    z-index: 2;
-    color: #fff;
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 35px;
-    font-size: 20px;
-    letter-spacing: 1px;
-
+.product .product-card .product-price {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 35px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 .product .product-card .popup-btn {
-    z-index: 2;
-    background-color: #77787c;
-    color: #fff;
-    position:absolute;
-    bottom: 0px;
-    left: 51%;
-    transform: translate(-50%);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 5px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    
+  z-index: 2;
+  background-color: #77787c;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 51%;
+  transform: translate(-50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.product .popup-view{
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity:0;
-    visibility: hidden;
-    
-    
-
+.product .popup-view {
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .popup-view {
-    opacity:1;
-    visibility: visible;
-    /* background:  #151515;
+  opacity: 1;
+  visibility: visible;
+  /* background:  #151515;
     color: white; */
-    background-image: url('https://www.ctm.co.ke/media/catalog/product/cache/962f0fa93f6ebc4f041fe71bedef3e3f/m/i/mika-slate-wall-cladding-tile-95x300-ls1.jpg'); 
-    background-size: cover; 
-    height: 736px;
-
+  background-image: url("https://www.ctm.co.ke/media/catalog/product/cache/962f0fa93f6ebc4f041fe71bedef3e3f/m/i/mika-slate-wall-cladding-tile-95x300-ls1.jpg");
+  background-size: cover;
+ 
 }
-#toolbar{
-    background-color: rgb(52, 49, 49);
+#toolbar {
+  background-color: rgb(52, 49, 49);
 }
 
-.product .popup-card{
-    position: relative;
-    display: flex;
-    width:800px ;
-    height: 500px;
-    margin: 20px;
-    
-    
+.product .popup-card {
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
 }
 .product .popup-card .product-img {
-    z-index: 2;
-    background: #1D212B;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    
+  z-index: 2;
+  background: #1d212b;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
 }
 .product .popup-card .product-img img {
-    z-index: 2;
-    position: relative;
-    left: -21px;
-    width: 450px;
-
+  z-index: 2;
+  position: relative;
+  left: -21px;
+  width: 450px;
 }
-.product .popup-card .info{
-    z-index: 2;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 40ox;
-    border-radius: 10px;
+.product .popup-card .info {
+  z-index: 2;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40ox;
+  border-radius: 10px;
 }
-#close-btn{
-    color: black;
-    z-index: 3;
-    position: absolute;
-    right: 0;
-    font-size: 70px;
-    margin: 20px;
-    cursor: pointer;
-} */
-
-.product .popup-card .info .add-cart-btn{
-    color: #fff;
-    background:#009DD2 ;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px auto;
-    padding: 10px 50px;
-    border-radius: 20px;
+#close-btn {
+  color: black;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  font-size: 70px;
+  margin: 20px;
+  cursor: pointer;
 }
-.product .popup-card .info .add-wish{
-    color: #009DD2;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
+*/ .product .popup-card .info .add-cart-btn {
+  color: #fff;
+  background: #009dd2;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
 }
-.product-img-inner{
-    padding-left: 10%;
-    margin-top: 4%;
-   
+.product .popup-card .info .add-wish {
+  color: #009dd2;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.info-inner{
-    padding-left: 38%;
-    
+.product-img-inner {
+  padding-left: 10%;
+  margin-top: 4%;
 }
-#info-inner-h2{
-    font-size: 40px;
-    line-height: 20px;
-    margin: 10px;
-    margin-left: 0.8%;
-    margin-top: -53%;
-    
+.info-inner {
+  padding-left: 38%;
 }
-#info-inner-h2-span{
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-left: 0.7%;
-    
-    
+#info-inner-h2 {
+  font-size: 40px;
+  line-height: 20px;
+  margin: 10px;
+  margin-left: 0.8%;
+  margin-top: -53%;
 }
-#info-inner-price{
-    font-size: 40px;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-left: 1%;
-    font-weight: 700;
-    font-style:unset;
-
-  
+#info-inner-h2-span {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 0.7%;
 }
-#info-inner-desc{
-    font-size: 25px;
-    max-width: 90%; 
-    margin-left: 1%; 
-    margin-top: 2%;  
+#info-inner-price {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 1%;
+  font-weight: 700;
+  font-style: unset;
+}
+#info-inner-desc {
+  font-size: 25px;
+  max-width: 90%;
+  margin-left: 1%;
+  margin-top: 2%;
 }
 
 /*Responsiveness */
-@media (max-width:1280px){
-    .product .popup-card{
-        flex-direction: column;
-        width: 550px;
-        height: auto;
-    }
-    .product .popup-card .product-img{
-        z-index: 3;
-        width: 100%;
-        height: 200px;
-        transform: translateY(0);
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .product .popup-card .product-img img{
-        left: initial;
-        max-width: 100%;
-        height: 100%;
-        width: 45%;
-    }
-.product .popup-card .info{
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
-
-    }
-    .product .popup-card .info h2{
-        margin: 20px 5px 5px 5px;
-        font-size: 25px;
-    }
-    .product .popup-card .info h2 span{
-        font-size: 10px;
-    }
-    .product .popup-card .info p{
-        margin: 5px;
-        font-size: 13px;
-    }
-    .product .popup-card .info .price{
-        margin: 5px;
-        font-size: 30px;
-    }
-    .product .popup-card .info .add-cart-btn{
-         margin: 5px auto;
-         padding: 5px 40px;
-         font-size: 14px;
-    }
-    .product .popup-card .info .add-wish{
-        font-size: 14px;
-        margin-left:1%
-    }
-    .product .popup-card .info .close-btn{
-        z-index: 4;
-    }
-    .info-inner{
-        margin-top: 50%;
-        margin-right: 4%;
-        margin-left: -30%;
-        padding-left: 40%;
-   
-    }
+@media (max-width: 1280px) {
+  .product .popup-card {
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+  }
+  .product .popup-card .product-img {
+    z-index: 3;
+    width: 100%;
+    height: 200px;
+    transform: translateY(0);
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .product .popup-card .product-img img {
+    left: initial;
+    max-width: 100%;
+    height: 100%;
+    width: 45%;
+  }
+  .product .popup-card .info {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .product .popup-card .info h2 {
+    margin: 20px 5px 5px 5px;
+    font-size: 25px;
+  }
+  .product .popup-card .info h2 span {
+    font-size: 10px;
+  }
+  .product .popup-card .info p {
+    margin: 5px;
+    font-size: 13px;
+  }
+  .product .popup-card .info .price {
+    margin: 5px;
+    font-size: 30px;
+  }
+  .product .popup-card .info .add-cart-btn {
+    margin: 5px auto;
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+  .product .popup-card .info .add-wish {
+    font-size: 14px;
+    margin-left: 1%;
+  }
+  .product .popup-card .info .close-btn {
+    z-index: 4;
+  }
+  .info-inner {
+    margin-top: 50%;
+    margin-right: 4%;
+    margin-left: -30%;
+    padding-left: 40%;
+  }
 }

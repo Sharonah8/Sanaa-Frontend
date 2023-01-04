@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogIn from "./LogIn";
 import Footer from "./Footer";
-import '../Styles/SignUp.css'
+import "../Styles/SignUp.css";
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
@@ -118,7 +118,7 @@ function SignUp() {
                 type="submit"
                 value="Register"
                 onClick={() => handleSubmit()}
-                id = 'signupbtn'
+                id="signupbtn"
               />
             </div>
             <br />
