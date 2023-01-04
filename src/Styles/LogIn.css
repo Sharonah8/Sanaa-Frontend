@@ -181,7 +181,7 @@ input[type='submit'] {
 }
 
   
-input[type='submit']:hover {
+#loginbtn:hover {
     background-color: white;
     color: black;
     /* transform: scale(1.1);  */
