@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 // import { NavLink } from "react-router-dom";
 import LogIn from "./LogIn";
 import Footer from "./Footer";
-import "./SignUp.css";
+import "../Styles/SignUp.css";
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
