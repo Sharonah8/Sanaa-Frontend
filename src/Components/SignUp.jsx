@@ -15,6 +15,9 @@ function SignUp() {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
+  // const valid = () => {
+  //   return formValues.username.length & formValues.email.length;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,9 +37,9 @@ function SignUp() {
   };
 
   useEffect(() => {
-    console.log(formErrors);
+    // console.log(formErrors);
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
+      // console.log(formValues);
     }
   }, [formErrors]);
   const validate = (values) => {
