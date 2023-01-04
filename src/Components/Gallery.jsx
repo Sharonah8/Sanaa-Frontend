@@ -69,11 +69,7 @@ function Gallery({ img }) {
           </Button>
         </Toolbar>
       </AppBar>
-<<<<<<< HEAD
-          <div className='popup-view'>
-=======
             <div className='popup-view'>
->>>>>>> development2
             <div className='popup-card-inner'>
               <div className='product-img-inner'>
                 <img src={img.image} alt=''width={400} height={500} ></img>

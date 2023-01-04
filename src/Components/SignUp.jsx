@@ -2,11 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogIn from "./LogIn";
 import Footer from "./Footer";
-<<<<<<< HEAD
-import "../Styles/SignUp.css";
-=======
 import '../Styles/SignUp.css'
->>>>>>> development2
 
 function SignUp() {
   const initialValues = { username: "", email: "", password: "" };
