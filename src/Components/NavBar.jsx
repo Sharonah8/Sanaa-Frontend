@@ -15,7 +15,7 @@ function NavBar() {
     </button>
     <div class="collapse navbar-collapse justify-content-between" id="navbarText">
       <div className="d-flex">
-         
+      
       </div>
       <div className="d-flex">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -32,12 +32,21 @@ function NavBar() {
           <Link class="nav-link text-light" to="/AddGallery">AddGallery</Link>
           </li>
           <li class="nav-item">
+          <Link class="nav-link text-light" to="/GalleryListing">GalleryListing</Link>
+          </li>
+          <li class="nav-item">
+          <Link class="nav-link text-light" to="/UpdateGallery">UpdateGallery</Link>
+          </li>
+          <li class="nav-item">
+          <Link class="nav-link text-light" to="/Cart">Cart</Link>
+          </li>
+          <li class="nav-item">
           <Link class="nav-link text-light" to="/LogIn"><button id='nav-btn-login'>LogIn</button></Link>
           {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */}
           </li>
           <li class="nav-item">
           <Link class="nav-link text-light" to="/SignUp"><button id='nav-btn-login'>SignUp</button></Link>
-
+          
           {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */}
           </li>
         </ul>
@@ -46,7 +55,7 @@ function NavBar() {
   </div>
 </nav>
   )
-    
+  
 }
 
 

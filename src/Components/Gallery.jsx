@@ -1,4 +1,4 @@
-import * as React from "react";
+import  React, { useState} from "react";
 import Review from "./Review";
 import Button from "@mui/material/Button";
 import "../Styles/Gallery.css";
@@ -8,6 +8,9 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
+import { useDispatch } from 'react-redux';
+import { addCart } from '../redux/action';
+import { useParams } from 'react-router-dom';
 
 
 // import Slide from '@mui/material/Slide';
@@ -23,6 +26,15 @@ import CloseIcon from "@mui/icons-material/Close";
 // });
 
 function Gallery({ img }) {
+  const {id} = useParams();
+  const [gallery] = useState([]);
+
+  const dispatch = useDispatch();
+  const addGallery = (gallery) => {
+      dispatch(addCart(gallery));
+  }
+
+
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -36,12 +48,12 @@ function Gallery({ img }) {
   return (
 
     
-
+    
     <div className='container'>
       <div className='product'>
         <div className='product-card' >
           <h2 className='product-name'>{img.title}</h2>
-            <span className='product-price'>{img.price}</span>
+            <span className='product-price'>${img.price}.00</span>
              <button className='popup-btn'onClick={handleClickOpen} >Quick View</button>
               <img src={img.image} clasName="product-img" alt='product-img' width={299} height={320}></img>
          </div>
@@ -69,7 +81,7 @@ function Gallery({ img }) {
           </Button>
         </Toolbar>
       </AppBar>
-
+      
           <div className='popup-view'>
             <div className='popup-card-inner'>
               <div className='product-img-inner'>
@@ -78,8 +90,8 @@ function Gallery({ img }) {
               <div className='info-inner'>
                 <h2 id='info-inner-h2' >{img.title}.<br/><span id='info-inner-h2-span'><u>info:-</u></span></h2>
                 <p id='info-inner-desc'>{img.description}</p>
-                <p id = 'info-inner-price'>{img.price}.</p>
-                 <a href="#" className='add-cart-btn'>Add to Cart</a>
+                <p id = 'info-inner-price'>${img.price}.00</p>
+                 <button onClick={() => addGallery(gallery)}>Add to cart</button>
                  <Review  />
               </div>
             </div>
