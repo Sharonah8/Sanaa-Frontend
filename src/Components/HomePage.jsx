@@ -12,10 +12,7 @@ function HomePage() {
               Sanaa <br></br> Art
             </h2>
             <p className="home-page-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+              To understand a work of art, you must develop the ability to perceive. To perceive is to become deeply aware through the senses of the special nature of art.
             </p>
             <button id="home-page-btn">Go to store</button>
           </div>

@@ -2,6 +2,7 @@ import React from 'react'
 //import navbar.css from styles
 import '../Styles/NavBar.css';
 import { Link } from 'react-router-dom';
+import logo from '../Images/logo.png'
 
 
 
@@ -9,8 +10,8 @@ function NavBar() {
   return (
     <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <h1 class="navbar-brand text-light" href="#">Sanaa</h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <img src={logo} id ='img-mini'/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-between" id="navbarText">
