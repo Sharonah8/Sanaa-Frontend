@@ -1,0 +1,29 @@
+.delete {
+    background-color: maroon;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.update {
+    background-color: green;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.listing {
+    background-image: url('https://media.istockphoto.com/id/174874051/photo/blank-photo-prints-on-a-table.jpg?s=612x612&w=0&k=20&c=KE3AwzR1XMeRutoxGOIRLpYglZC2X6BCy7ftt4WBF9o='); 
+    /* height: 20em; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:black;
+}
+
+.listing-container {
+    background-color: whitesmoke;
+}

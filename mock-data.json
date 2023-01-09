@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "username": "Sharona",
+      "email": "sharona@gmail.com",
+      "password": "23232323",
+      "id": 12
+    },
+    {
+      "username": "ddd",
+      "email": "dismasngoda@gmail.com",
+      "password": "121212",
+      "id": 13
+    },
+    {
+      "username": "Dismas Ng'oda",
+      "email": "dismasngoda@gmail.com",
+      "password": "454545445",
+      "id": 14
+    },
+    {
+      "username": "Dismas",
+      "email": "dismas.ngoda@student.moringaschool.com",
+      "password": "erererre",
+      "id": 15
+    },
+    {
+      "username": "Tay",
+      "email": "dismas.ngoda@student.moringaschool.com",
+      "password": "erererre",
+      "id": 16
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 17
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 18
+    }
+  ]
+}

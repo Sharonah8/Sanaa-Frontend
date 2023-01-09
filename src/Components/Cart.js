@@ -1,9 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { addCart, delCart } from "../../redux/action";
+import { addCart, delCart } from "../redux/action";
 import { AiOutlineMinus } from 'react-icons/ai'
 import { GrFormAdd } from 'react-icons/gr'
-import './cart.css'
+import '../Styles/cart.css';
 import { Link } from 'react-router-dom';
 
 const Cart = ({gallery}) => {
@@ -24,19 +24,19 @@ const Cart = ({gallery}) => {
             </div>
         );
       };
-
-    const cartItems = (gallery) => {
+      
+    const cartItems = (img) => {
         return (
             <>
                 <div className='cart'>
-                    <img className='cart_image' src={gallery.image} alt={gallery.title} />
+                    <img className='cart_image' src={img.image} alt={img.title} />
                     <div className='description'>
-                        <h3>{gallery.title}</h3>
+                        <h3>{img.title}</h3>
                         <p>
-                            {gallery.qty} X Ksh. {gallery.price} = <span className='total'>Ksh. {gallery.qty * gallery.price}</span>
+                            {img.qty} X Ksh. {img.price} = <span className='total'>Ksh. {img.qty * img.price}</span>
                         </p>
-                        <button style={{color: 'red'}} className='action' onClick={() => handleDel(gallery)}><AiOutlineMinus /></button>
-                        <button style={{color: 'green'}} className='actions' onClick={() => handleAdd(gallery)}><GrFormAdd /></button>
+                        <button style={{color: 'red'}} className='action' onClick={() => handleDel(img)}><AiOutlineMinus /></button>
+                        <button style={{color: 'green'}} className='actions' onClick={() => handleAdd(img)}><GrFormAdd /></button>
                     </div>
                 </div>
             </>

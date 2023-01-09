@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import "./payment.css"
+import "../Styles/payment.css"
 
 const Payment = () => {
   return (
@@ -8,6 +8,7 @@ const Payment = () => {
       <div className='checkout'>
         <Link to='/'><h1>Sanaa</h1></Link>
         <p>Payment method coming soon... Stay in!</p>
+        <img src={require('../Images/pay.png')} alt= "payment coming soon" />
       </div>
     </div>
   )

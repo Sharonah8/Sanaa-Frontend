@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .checkout {
@@ -11,7 +12,7 @@
 }
 
 .checkout h1{
-    color: lightgreen;
+    color: rgb(77, 76, 76);
     font-size: 44px;
     font-weight: bold;
     font-style: italic;
