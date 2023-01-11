@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import GalleryList from "./GalleryList"
+import Cart from "./Cart";
+
+
 
 
 function MainGallery() {
@@ -29,6 +32,8 @@ function MainGallery() {
     <div className="main-gallery">
       <Search change={change} />
       <GalleryList images = {images}/>
+      <Cart images = {images}/>
+      
     </div>
   )
 }
