@@ -8,7 +8,7 @@ function About() {
     <div className="about-el">
       <img
         className="about-img"
-        src="https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/33f9c70f33b75988975bd301/pexels-photo-2250276.jpeg?version="
+        src="https://cdn.shopify.com/s/files/1/2279/7869/products/work-is-done_2048x2048.jpg?v=1641947042"
         alt="monalisa"
       />
       <h1 className="about-heading">About Us</h1>

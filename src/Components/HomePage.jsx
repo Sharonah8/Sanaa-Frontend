@@ -1,15 +1,10 @@
 import React from "react";
 import "../Styles/HomePage.css";
-import FeedbackDisplay from "./FeedbackDisplay";
-import Footer from './Footer';
-
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 
 function HomePage() {
-
- 
-
   return (
     <main>
       <div className="home-page">
@@ -50,13 +45,12 @@ function HomePage() {
           <div classname="overlay">
             <img
               className="home-page-img"
-              src="https://i.pinimg.com/564x/e7/18/77/e71877a5239419faec726e26e9e0696b.jpg"
+              src="https://cdn.firespring.com/images/ab9815f3-cc32-429c-bbf3-fdfd6fd617cf.png"
               alt="africanimage"
             />
           </div>
-        </div>        
+        </div>
       </div>
-      <FeedbackDisplay />
       <Footer />
     </main>
   );
