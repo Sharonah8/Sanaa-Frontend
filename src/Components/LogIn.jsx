@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import '../Styles/LogIn.css'
+import "../Styles/LogIn.css";
 
 function LogIn() {
   const [email, setEmail] = useState("");
@@ -39,7 +39,7 @@ function LogIn() {
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div>
-            <h2>Log~in</h2>
+              <h2>Log~in</h2>
             </div>
             <div className="input-group">
               <input
@@ -63,13 +63,20 @@ function LogIn() {
                 name="password"
                 placeholder="Enter password"
               />
-                <i id="loginlines"></i>
+              <i id="loginlines"></i>
             </div>
             <div className="links">
-              <a href="" id="fptext">Forgot password?</a>
+              <a href="" id="fptext">
+                Forgot password?
+              </a>
               {/* <a href="">Sign Up</a> */}
             </div>
-            <input type="submit" value="Login" onClick={() => handleSubmit()} id = 'loginbtn'/>
+            <input
+              type="submit"
+              value="Login"
+              onClick={() => handleSubmit()}
+              id="loginbtn"
+            />
           </form>
           <Link to={"/signup"}>
             <span id="login-section"> Don't have an account? Sign up</span>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import GalleryList from "./GalleryList";
 
+
+
 function MainGallery() {
   const [images, setImages] = useState([]);
   const [searchValue, setSearchValue] = useState([]);
@@ -25,7 +27,7 @@ function MainGallery() {
   return (
     <div className="main-gallery">
       <Search change={change} />
-      <GalleryList images={images} />
+      <GalleryList images={images} />    
     </div>
   );
 }

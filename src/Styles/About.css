@@ -16,7 +16,9 @@
     padding-right: 7em;
     height: 32em;
     width: 40em;
-    position: relative;
+    position: relative; 
+   
+
 }
 
 
@@ -34,14 +36,79 @@
     font-size: 2em;
     padding-left: 5em;
 }
+/* Typewriter effect 1 */
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "A"; }
+    2.2791%, 25.0698% { content: "Ab"; }
+    3.4186%, 23.9302% { content: "Abo"; }
+    4.5581%, 22.7907% { content: "Abou"; }
+    5.6977%, 21.6512% { content: "About"; }
+    6.8372%, 20.5116% { content: "About..."; }
+  
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "S"; }
+    33.0465%, 49.0000% { content: "Sa"; }
+    34.1860%, 47.8605% { content: "San"; }
+    35.3256%, 46.7209% { content: "Sana"; }
+    36.4651%, 45.5814% { content: "Sanaa"; }
+    37.6047%, 44.4419% { content: "Sanaa..."; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "A"; }
+    56.9767%, 72.9302% { content: "Ar"; }
+    58.1163%, 71.7907% { content: "Art"; }
+    59.2558%, 70.6512% { content: "Arts"; }
+    60.3953%, 69.5116% { content: "Arts..."; }
+ 
+  
 
-@media (max-width:1280px){
-    .about-img{
-        margin-right: 23%;
-        /* margin-top: 2%; */
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  #writers {
+    --caret: currentcolor;
+  }
+  
+  #writers::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  #writers::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  #writers.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  #writers.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    #writers::after {
+      animation: none;
     }
-    .about-heading{
-        max-width: 90%;
-        padding-left: 20%;
+    
+ 
+    #writers::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
     }
-}
+  }
+  
+  /**/
+  
+
+
+  

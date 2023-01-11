@@ -1,0 +1,89 @@
+/* Feedback section */
+
+.cont3{
+    display: flex;
+    justify-content: center;
+}
+#feedback{
+    text-align: center;
+    height: 1000px;
+    /* background-image: url('https://images.unsplash.com/photo-1616056828017-ce77aae200bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&w=1000&q=80'); 
+    height: 20em; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-color:black; */
+}
+#feedback h1, h2{
+    font-size: 2.8rem;
+    color: whitesmoke;
+}
+.cont3 form{
+    border: 1px solid black;
+    height: 800px;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.4rem;
+    text-align: left;
+    color: black;
+}
+/* #rating{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+} */
+#comment{
+    position: relative;
+    left: 150px;
+    width: 60%;
+    padding: 10px;
+}
+#comm{
+    position: relative;
+    bottom: 100px;
+}
+#name{
+    position: relative;
+    left: 195px;
+    width: 50%;
+    padding: 10px;
+}
+#imgUrl{
+    position: relative;
+    left: 100px;
+    width: 50%;
+    padding: 10px;
+}
+#submit1{
+    background-color: #c1a267;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    border: #c1a267 1px solid;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 180px;
+}
+
+#submit1:hover{
+    background-color: #fbd58a;
+}
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
+}
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    background-color:rgb(223, 217, 217);
+    border:#c9c8c8;
+ }
+.cont2{
+    margin-top: -5%;
+    margin-bottom: 15%;
+}

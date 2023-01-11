@@ -20,3 +20,12 @@
     object-fit: cover;
   
 }
+#drop-down-nav{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-left: 1%;
+}
+#drop-down-nav:hover{
+  transform: scale(1.1);
+}
