@@ -57,6 +57,38 @@
   transition: ease-in-out 0.4s;
 }
 
+.cont2{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 12%;
+    margin: 100px;
+}
+.fcontainer{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 100px;
+}
+
+.feedbackCard{
+    border: 1px black solid;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px #e3e3e3;
+}
+ .feedbackCard:hover{
+    box-shadow: 10px 10px 5px #c9c8c8; 
+ }
+ .feedbackCard button{
+    width: 20%;
+    margin-bottom: 10px;
+    background-color: red;
+ }
+
+ .feedbackCard img{
+    height: 50px;
+    width: 35;
+}
+
 .footer-section {
   border: solid 30px red;
 }

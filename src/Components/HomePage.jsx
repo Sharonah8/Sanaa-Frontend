@@ -1,8 +1,12 @@
 import React from "react";
 import "../Styles/HomePage.css";
+import FeedbackDisplay from "./FeedbackDisplay";
 import Footer from './Footer';
 
 function HomePage() {
+
+ 
+
   return (
     <main>
       <div className="home-page">
@@ -23,9 +27,9 @@ function HomePage() {
               alt="africanimage"
             />
           </div>
-        </div>
-       
+        </div>        
       </div>
+      <FeedbackDisplay />
       <Footer />
 
     </main>

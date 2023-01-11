@@ -1,4 +1,5 @@
 import  React, { useState} from "react";
+import { Link } from "react-router-dom";
 import Review from "./Review";
 import Button from "@mui/material/Button";
 import "../Styles/Gallery.css";
@@ -92,6 +93,9 @@ function Gallery({ img }) {
                 <p id='info-inner-desc'>{img.description}</p>
                 <p id = 'info-inner-price'>${img.price}.00</p>
                  <button onClick={() => addGallery(gallery)}>Add to cart</button>
+                   <Link to={"/review"}>
+                   <button onClick={() => addGallery(gallery)}>Review</button>
+                  </Link>
                  <Review  />
               </div>
             </div>

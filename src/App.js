@@ -14,7 +14,8 @@ import Payment from './Components/Payment';
 import AddGallery from './Components/AddGallery';
 import GalleryListing from './Components/GalleryListing';
 import UpdateGallery from './Components/UpdateGallery';
-
+import Feedback from './Components/Feedback';
+import FeedbackDisplay from './Components/FeedbackDisplay';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route exact path="/addgallery" element={<AddGallery />} />
         <Route exact path="/gallerylisting" element={<GalleryListing />} />
         <Route exact path="/updategallery" element={<UpdateGallery />} />
+        <Route exact path="/feedback" element={<Feedback />} />
+        <Route exact path="/feedbackdisplay" element={<FeedbackDisplay />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/login" element={<LogIn />} />
         <Route exact path="/signup" element={<Signup />} />

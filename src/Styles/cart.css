@@ -4,19 +4,19 @@
 }
 
 .empty_cart h3 {
-    color: #000;
+    color: white;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .description h3 {
-    color: #000;
+    color: white;
 }
 
 
 .description p {
-    color: #000;
+    color: white;
 }
 
 .total {
@@ -43,13 +43,13 @@
 
 .row {
     margin: auto;
-    color: #000;
+    color: red;
     margin-top: 300px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: bold;
-    color: rgb(77, 76, 76);
+    font-weight: bolder;
+    color: red;
     font-size: 28px;
 }
 
@@ -64,4 +64,8 @@
 
 img.cart_image {
     width: 250px;
+}
+
+.btn, .h3{
+    color: red;
 }
