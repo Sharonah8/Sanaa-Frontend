@@ -39,14 +39,14 @@ function handleChange(e){
 //console.log(formData)
     return(
         <div id='feedback'>
-            <h1>Hope you had an awesome stay with us</h1>
-            <h2>You can fill the form below to tell us about your experience</h2>
+            {/* <h1>Hope you had an awesome stay with us</h1>
+            <h2>You can fill the form below to tell us about your experience</h2> */}
             <div className="cont3">
                 <form onSubmit={handleSubmit}>
-                    <label id='comm' htmlFor="comment">Comment:</label>
-                    <textarea required name="Comment" id="comment" cols="30" rows="10" placeholder='write your comments here ..' onChange={handleChange} value={formData.comment}></textarea><br /><br />
-                    <label htmlFor="name">Name:</label>
-                    <input required type="text" name="Name" id="name" onChange={handleChange} value={formData.name} placeholder="Enter name" maxLength={20}/><br /> <br />
+                    {/* <label id='comm' htmlFor="comment">Comment:</label> */}
+                    <textarea required name="Comment" id="comment" cols="0" rows="0" placeholder='write your comments here ..' onChange={handleChange} value={formData.comment}></textarea><br /><br />
+                    <label htmlFor="name">Name:</label><br />
+                    <input required type="text" name="Name" id="name" onChange={handleChange} value={formData.name} placeholder="Enter name" maxLength={20}/><br /> <br /> 
                     <label htmlFor="photo_url">Your photo url:</label>
                     <input required type="text" name="image_url" id="photo_url" onChange={handleChange} value={formData.photo_url} placeholder="Enter photo_url"/> <br />
                     <input type="submit" id='submit1'/>
