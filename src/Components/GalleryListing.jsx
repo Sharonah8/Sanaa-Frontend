@@ -16,7 +16,7 @@ function GalleryListing() {
     async function deleteOperation(id)
     {
         // alert(id)
-        let result = await fetch("http://localhost:3000/images/"+id,{
+        let result = await fetch("http://localhost:8000/images/"+id,{
             method: "DELETE"
             });
             result = await result.json();
@@ -24,7 +24,7 @@ function GalleryListing() {
             getData() 
     }
     async function getData(){
-        let result = await fetch("http://localhost:3000/images");
+        let result = await fetch("http://localhost:8000/images");
         result = await result.json();
         setData(result)
     }
