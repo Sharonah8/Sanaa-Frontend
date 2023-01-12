@@ -19,11 +19,11 @@
 }
 .cont3 form{
     border: 1px solid black;
-    height: 800px;
-    padding: 50px;
-    width: 40%;
+    height: 300px;
+    padding: 0px;
+    width: 20%;
     font-family: 'Poppins', sans-serif ;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-align: left;
     color: black;
 }
@@ -35,9 +35,9 @@
 } */
 #comment{
     position: relative;
-    left: 150px;
+    left: 0px;
     width: 60%;
-    padding: 10px;
+    
 }
 #comm{
     position: relative;
@@ -45,31 +45,38 @@
 }
 #name{
     position: relative;
-    left: 195px;
+    left: 0px;
     width: 50%;
-    padding: 10px;
+    padding: 0px;
 }
 #imgUrl{
     position: relative;
     left: 100px;
     width: 50%;
     padding: 10px;
+
+}
+#photo_url{
+    color: black;
+    width: 80%;
 }
 #submit1{
-    background-color: #c1a267;
+    background-color: black;
     font-family:'Poppins', sans-serif;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     border: #c1a267 1px solid;
-    padding: 10px;
-    width: 50%;
+    /* padding: 10px; */
+    width: 30%;
     color: white;
     position: relative;
-    top: 80px;
-    left: 180px;
+    margin-left: 35%;
+    /* top: 80px;
+    left: 180px; */
 }
 
 #submit1:hover{
-    background-color: #fbd58a;
+    background-color:white;
+    color: black;
 }
 .feedbackCard{
     border: 1px black solid;
@@ -86,4 +93,5 @@
 .cont2{
     margin-top: -5%;
     margin-bottom: 15%;
+
 }

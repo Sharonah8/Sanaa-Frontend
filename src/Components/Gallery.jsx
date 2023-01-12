@@ -12,6 +12,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useDispatch } from 'react-redux';
 import { addCart } from '../redux/action';
 import { useParams } from 'react-router-dom';
+import Feedback from "./Feedback";
 
 
 // import Slide from '@mui/material/Slide';
@@ -93,16 +94,18 @@ function Gallery({ img }) {
                 <p id='info-inner-desc'>{img.description}</p>
                 <p id = 'info-inner-price'>${img.price}.00</p>
                  <button onClick={() => addGallery(gallery)}>Add to cart</button>
-                   <Link to={"/review"}>
+                   {/* <Link to={"/review"}>
                    <button onClick={() => addGallery(gallery)}>Review</button>
-                  </Link>
+                  </Link> */}
                  <Review  />
               </div>
             </div>
           </div>
+          <Feedback />
           </Dialog>
-
+        
        </div>
+     
      </div>
   );
 }

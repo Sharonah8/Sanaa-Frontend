@@ -87,11 +87,11 @@ function NavBar() {
                   About
                 </Link>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <Link class="nav-link text-light" to="/Feedback">
                   Review
                 </Link>
-              </li>
+              </li> */}
               {/* <li class="nav-item">
           <Link class="nav-link text-light" to="/Gallery">Gallery</Link>
           </li>
