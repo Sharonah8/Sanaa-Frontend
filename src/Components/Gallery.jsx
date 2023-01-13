@@ -93,7 +93,7 @@ function Gallery({ img }) {
                 <h2 id='info-inner-h2' >{img.title}.<br/><span id='info-inner-h2-span'><u>info:-</u></span></h2>
                 <p id='info-inner-desc'>{img.description}</p>
                 <p id = 'info-inner-price'>${img.price}.00</p>
-                 <button onClick={() => addGallery(gallery)}>Add to cart</button>
+                 <button onClick={() => addGallery(gallery)} id='add-cart-btn'>Add to cart</button>
                    {/* <Link to={"/review"}>
                    <button onClick={() => addGallery(gallery)}>Review</button>
                   </Link> */}
