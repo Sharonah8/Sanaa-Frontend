@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import { Link } from "react-router-dom";
 import "../Styles/Feedback.css"
 
 
@@ -44,12 +45,16 @@ function handleChange(e){
             <div className="cont3">
                 <form onSubmit={handleSubmit}>
                     {/* <label id='comm' htmlFor="comment">Comment:</label> */}
-                    <textarea required name="Comment" id="comment" cols="0" rows="0" placeholder='write your comments here ..' onChange={handleChange} value={formData.comment}></textarea><br /><br />
+                    Comment:
+                    <textarea required name="Comment" id="comment" cols="0" rows="0" placeholder='write your comments here about this potrait...' onChange={handleChange} value={formData.comment}></textarea>
                     <label htmlFor="name">Name:</label><br />
                     <input required type="text" name="Name" id="name" onChange={handleChange} value={formData.name} placeholder="Enter name" maxLength={20}/><br /> <br /> 
                     <label htmlFor="photo_url">Your photo url:</label>
                     <input required type="text" name="image_url" id="photo_url" onChange={handleChange} value={formData.photo_url} placeholder="Enter photo_url"/> <br />
+                    {/* <Link to={"/HomePage"}> */}
                     <input type="submit" id='submit1'/>
+                    {/* </Link> */}
+                   
                 </form>
             </div>
         </div>
