@@ -9,6 +9,8 @@
     /* height: 20em; */
     background-repeat: no-repeat;
     background-size: cover; 
+ 
+    min-height: 100vh;
 }
 
 .about-img{
@@ -33,15 +35,4 @@
     font-family: "Comic Neue";
     font-size: 2em;
     padding-left: 5em;
-}
-
-@media (max-width:1280px){
-    .about-img{
-        margin-right: 23%;
-        /* margin-top: 2%; */
-    }
-    .about-heading{
-        max-width: 90%;
-        padding-left: 20%;
-    }
 }

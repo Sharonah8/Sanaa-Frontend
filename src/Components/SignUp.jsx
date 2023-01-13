@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
-import LogIn from "./LogIn";
+// import LogIn from "./LogIn";
 import Footer from "./Footer";
 import '../Styles/SignUp.css'
 
@@ -66,6 +66,7 @@ function SignUp() {
 
   return (
     <div className="signup-main">
+      <div className="background">
       <div className="box">
         <div className="form">
           <form onSubmit={handleSubmit}>
@@ -134,7 +135,7 @@ function SignUp() {
           </form>
         </div>
       </div>
-
+    </div>
     <Footer />
     </div>
   );

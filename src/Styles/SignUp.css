@@ -1,18 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
 .signup-main{
-
-    /* display: flex; */
-    justify-content: center;
-
-    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597'); 
+    width: 100%;
+    height: auto;
 }
 
 
 .box {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* position: relative; */
-    width: 480px;
+    
+    width: 580px;
     height: 620px;
     border-radius: 8px;
     background: #1c1c1c;
