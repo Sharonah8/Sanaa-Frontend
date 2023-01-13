@@ -90,6 +90,18 @@ body{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+#add-cart-btn{
+  background-color: rgb(77, 76, 76);
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
+}
+/* #add-cart-btn :hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.1); 
+
+} */
 .product .product-card .product-img {
   z-index: 1;
   position: absolute;
@@ -121,7 +133,7 @@ body{
 }
 .product .product-card .popup-btn {
   z-index: 2;
-  background-color: #77787c;
+  background-color: green;
   color: #fff;
   position: absolute;
   bottom: 0px;
@@ -235,6 +247,8 @@ body{
   margin: 10px;
   margin-left: 0.8%;
   margin-top: -53%;
+  color: black;
+  font-weight: 900;
 }
 #info-inner-h2-span {
   font-size: 20px;
