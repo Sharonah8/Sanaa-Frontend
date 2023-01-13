@@ -14,7 +14,7 @@ function Footer() {
         style={{ margin: 10  }}
       />
       <SocialIcon
-        url="https://linkedin.com/in/jaketrent"
+        url="https://www.linkedin.com/in/ian~kibui"
         style={{ margin: 10 }}
       />
       <SocialIcon
