@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
-.signup-main{
-    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597'); 
-    width: 100%;
-    height: auto;
-}
-
+/* body{ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23242a;
+} */
 
 .box {
-    
-    width: 580px;
-    height: 620px;
+    position: relative;
+    width: 380px;
+    height: 420px;
     border-radius: 8px;
     background: #1c1c1c;
     overflow: hidden;
+    margin-left: 37%;
+    margin-top: 5%;
 }
 
 .box::before{
     content: '';
     position: absolute;
-    /* content: ''; */
-    /* position: absolute; */
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent, 
-    red, purple);
-  
+    #45f4ff, #45f4ff);
 }
 
 .form {
@@ -40,22 +40,41 @@
     flex-direction: column;
 
 }
+.form h2 {
+    color: #45f3ff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0,1em;
+
+}
+
 .input-group{
     position: relative;
     width: 300px;
     margin-top: 35px;
-    margin-left: 45px;
 
+}
+.input-group input {
+    position: relative;
+    width: 100%;
+    padding: 10px 9px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    border-radius: 5px;
 }
 .input-group i {
     position: absolute;
-    padding-left: 50%;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
     background: #45f3ff;
-    background: rgb(77, 76, 76);
+    border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
     z-index: 9;
@@ -71,7 +90,6 @@
     margin: 10px 0;
     font-size: 00.95em;
     color: #8f8f8f;
-    color: white;
     text-decoration: none;
 }
 
@@ -79,39 +97,17 @@
 .links a:nth-child(2)
  {
     color: #45f3ff;
-    color: white;
 
 }
 input[type='submit'] {
     border: none;
     outline: none;
     background: #45f3ff;
-    background: rgb(77, 76, 76);
     width: 250px;
     height: 50px;
     margin-top: 10px;
-    margin-left: 10%;
+    margin-left: 40%;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
 }
-#signupbtn{
-    background-color: rgb(77, 76, 76);
-    color: white;
-    width: 200px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 16%;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-   
-}
-  
-#signupbtn:hover {
-    background-color: white;
-    color: black;
-    /* transform: scale(1.1);  */
-    transition: ease-in-out 0.4s;
-  }
-

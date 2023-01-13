@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
-.signup-main{
-    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597'); 
-    width: 100%;
-    height: auto;
-}
-
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23242a;
+} */
 
 .box {
-    
-    width: 580px;
+    position: relative;
+    width: 480px;
     height: 620px;
     border-radius: 8px;
     background: #1c1c1c;
@@ -18,15 +19,12 @@
 .box::before{
     content: '';
     position: absolute;
-    /* content: ''; */
-    /* position: absolute; */
     top: -50%;
     left: -50%;
     width: 380px;
     height: 420px;
     background: linear-gradient(0deg, transparent, 
-    red, purple);
-  
+    #45f4ff, #45f4ff);
 }
 
 .form {
@@ -55,7 +53,6 @@
     width: 100%;
     height: 2px;
     background: #45f3ff;
-    background: rgb(77, 76, 76);
     transition: 0.5s;
     pointer-events: none;
     z-index: 9;
@@ -71,7 +68,6 @@
     margin: 10px 0;
     font-size: 00.95em;
     color: #8f8f8f;
-    color: white;
     text-decoration: none;
 }
 
@@ -79,14 +75,12 @@
 .links a:nth-child(2)
  {
     color: #45f3ff;
-    color: white;
 
 }
 input[type='submit'] {
     border: none;
     outline: none;
     background: #45f3ff;
-    background: rgb(77, 76, 76);
     width: 250px;
     height: 50px;
     margin-top: 10px;
@@ -95,23 +89,6 @@ input[type='submit'] {
     font-weight: 600;
     cursor: pointer;
 }
-#signupbtn{
-    background-color: rgb(77, 76, 76);
-    color: white;
-    width: 200px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 16%;
-    border-radius: 4px;
-    font-weight: 600;
-    cursor: pointer;
-   
-}
-  
-#signupbtn:hover {
-    background-color: white;
-    color: black;
-    /* transform: scale(1.1);  */
-    transition: ease-in-out 0.4s;
-  }
-
+/* p{
+    color: rgb(213, 198, 198);
+} */

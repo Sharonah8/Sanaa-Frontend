@@ -1,6 +1,9 @@
+
 .cart {
     color: #000;
     border: 2px solig lawngreen;
+    
+
 }
 
 .empty_cart h3 {
@@ -8,6 +11,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    
 }
 
 .description h3 {

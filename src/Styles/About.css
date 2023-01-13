@@ -9,6 +9,8 @@
     /* height: 20em; */
     background-repeat: no-repeat;
     background-size: cover; 
+ 
+    min-height: 100vh;
 }
 
 .about-img{
@@ -112,3 +114,4 @@
 
 
   
+

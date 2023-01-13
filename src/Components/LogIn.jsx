@@ -34,7 +34,8 @@ function LogIn() {
   };
 
   return (
-    <div className="login-main">
+   <div className="login-main">
+    <div className="background">
       <div className="box">
         <div className="form">
           <form onSubmit={handleSubmit}>
@@ -83,8 +84,9 @@ function LogIn() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
+      <Footer />
+  </div>
   );
 }
 
