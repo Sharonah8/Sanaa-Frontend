@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     background-image: url("https://www.ctm.co.ke/media/catalog/product/cache/962f0fa93f6ebc4f041fe71bedef3e3f/m/i/mika-slate-wall-cladding-tile-95x300-ls1.jpg");
+    
 
 
 }
@@ -15,6 +16,7 @@
     /* background-repeat: no-repeat;
     background-size: cover;
     background-color:black; */
+    
 }
 #feedback h1, h2{
     font-size: 2.8rem;
@@ -93,7 +95,8 @@
 .feedbackCard{
     border: 1px black solid;
     border-radius: 4px;
-    box-shadow: 10px 10px 5px #e3e3e3;
+    box-shadow: 10px 10px 5px #414141;
+    background: white;
 }
  .feedbackCard:hover{
     box-shadow: 10px 10px 5px #c9c8c8; 
@@ -107,3 +110,10 @@
     margin-bottom: 15%;
 
 }
+#what-about-us{
+ width: 100%;
+ margin-left: 0%;
+}
+#what-about-us:hover{
+    color: white;
+   }

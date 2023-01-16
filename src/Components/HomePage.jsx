@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 // import { Feedback } from "@mui/icons-material";
 import FeedbackDisplay from "./FeedbackDisplay";
 
-
 function HomePage() {
   return (
     <main>
@@ -41,7 +40,7 @@ function HomePage() {
               of the special nature of art.
             </p>
             <Link to={"/Gallery"}>
-            <button id="home-page-btn">Go to store</button>
+              <button id="home-page-btn">Go to store</button>
             </Link>
           </div>
           <div classname="overlay">

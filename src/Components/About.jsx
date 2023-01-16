@@ -14,7 +14,7 @@ function About() {
         <h1 aria-label="Hi! I'm a developer" className="about-heading">
           Hi!&nbsp;<span id="writers"></span>
         </h1>
-        
+
         {/* <h1 className="about-heading">About Us</h1> */}
         <p className="about-paragraph">
           Sanaa is an e-commerce platform designed to host classic art pieces.

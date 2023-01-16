@@ -22,7 +22,7 @@ function UpdateGallery(props) {
             <input type="text" defaultValue={img.price} /> <br /> <br />
             <img style={{width:50}} src={"http://localhost:3000/images/"+img.file} />
             <br /> <br />
-            <button>
+            <button id = 'update-btn'>
                update
             </button>
         </div>
