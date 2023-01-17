@@ -16,7 +16,7 @@ function AddGallery() {
     formData.append("description", description);
     formData.append("price", price);
 
-    let result = await fetch("http://localhost:3000/images", {
+    let result = await fetch("http://localhost:8000/images", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",

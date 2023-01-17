@@ -149,9 +149,12 @@ function NavBar() {
               {/* </Main> */}
 
               <li class="nav-item">
-                <Link class="nav-link text-light" to="/Cart">
+              <Link to="/Cart">
+              <i class="fa fa-shopping-cart" aria-hidden="true" id="cart-sec"></i>
+              </Link>
+                {/* <Link class="nav-link text-light" to="/Cart">
                   Cart
-                </Link>
+                </Link> */}
               </li>
 
               <li class="nav-item">

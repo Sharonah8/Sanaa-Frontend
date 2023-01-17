@@ -10,6 +10,9 @@ input[type="radio"] {
     margin-top: 6%;
 }
 #rating-p{
-    margin-left: -4%;
+    margin-left:-16%;
     margin-top: 1%;
+    font-size: 25px;
+   
+    font-weight: 900;
 }

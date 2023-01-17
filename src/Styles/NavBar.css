@@ -29,3 +29,12 @@
 #drop-down-nav:hover{
   transform: scale(1.1);
 }
+#cart-sec{
+   
+    color: white;
+    margin-bottom: 50%;
+}
+#cart-sec:hover{
+   
+    transform: scale(1.1);
+}

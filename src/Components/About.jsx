@@ -11,11 +11,8 @@ function About() {
           src="https://img.favpng.com/12/22/17/africa-icon-png-favpng-yiCtHFVzkydMGdvFC8keqTcV8.jpg"
           alt="africa-image-png-"
         />
-        <h1 aria-label="Hi! I'm a developer" className="about-heading">
-          Hi!&nbsp;<span id="writers"></span>
-        </h1>
 
-        {/* <h1 className="about-heading">About Us</h1> */}
+        <h1 className="about-heading">About Us</h1>
         <p className="about-paragraph">
           Sanaa is an e-commerce platform designed to host classic art pieces.
           It seeks to bridge the gap between local and international artists and

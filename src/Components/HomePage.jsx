@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 // import { Feedback } from "@mui/icons-material";
 import FeedbackDisplay from "./FeedbackDisplay";
+import SectionMid from "./SectionMid";
 
 function HomePage() {
   return (
@@ -52,6 +53,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <SectionMid />
       <FeedbackDisplay />
       <Footer />
     </main>
