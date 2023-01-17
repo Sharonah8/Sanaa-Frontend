@@ -96,7 +96,7 @@ function NavBar() {
 
           {/* <Main> */}
           <DropDownContainer>
-            <DropDownHeader onClick={toggling}>
+            <DropDownHeader onMouseOver={toggling}>
               <li class="nav-item">
                 <Link class="nav-link text-light" to="/Gallery">Gallery</Link>
               </li>
@@ -105,10 +105,10 @@ function NavBar() {
             <DropDownListContainer>
               <DropDownList>
                 <ListItem><li class="nav-item">
-                <Link class="nav-link text-light" to="/AddGallery">AddGallery</Link>
+                <Link class="nav-link text-light" to="/AddGallery" id='drop-down-nav'>AddGallery</Link>
                 </li></ListItem>
                 <ListItem><li class="nav-item">
-                <Link class="nav-link text-light" to="/GalleryListing">GalleryListing</Link>
+                <Link class="nav-link text-light" to="/GalleryListing" id='drop-down-nav'>GalleryListing</Link>
                 </li></ListItem>
                 {/* <ListItem><li class="nav-item">
                 <Link class="nav-link text-light" to="/UpdateGallery">UpdateGallery</Link>

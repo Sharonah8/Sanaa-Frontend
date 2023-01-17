@@ -34,6 +34,7 @@ function MainGallery() {
       <GalleryList images = {images}/>
       {/* <Cart images = {images}/> */}
       
+      <GalleryList images = {images}/>      
     </div>
   )
 }
