@@ -64,11 +64,11 @@ function GalleryListing() {
                     </span>
                   </td>
                   {/* </Can> */}
-                  <td>
+                  {/* <td>
                     <Link to={"update/" + img.id}>
                       <span className="update">Update</span>
                     </Link>
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

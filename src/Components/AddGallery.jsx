@@ -3,66 +3,84 @@ import "../Styles/AddGallery.css";
 import Footer from "./Footer";
 
 function AddGallery() {
-  const [file, setFile] = useState("");
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [price, setPrice] = useState("");
+  const [file, setFile] = useState('');
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [price, setPrice] = useState('');
 
-  async function addGallery() {
-    console.warn(file, title, description, price);
-    const formData = new FormData();
-    formData.append("image", file);
-    formData.append("title", title);
-    formData.append("description", description);
-    formData.append("price", price);
 
-    let result = await fetch("http://localhost:8000/images", {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      body: formData,
-    });
-    alert("Upload successful");
+
+  function handleSubmit (e) {
+  e.preventDefault();
+  const site = {file,title,description,price}
+   
+    
+  
+    fetch("http://localhost:8000/images",{
+      method: 'POST',
+      headers: {"content-Type": "application/json"},
+      body: JSON.stringify(site)
+    })
+    .then((res) => res.json())
+    .then(()=>{
+      setFile('')   
+      setTitle('')
+      setDescription('')
+      setPrice('')
+    })
+  
+  
   }
 
   return (
     <div className="add-gallery-container">
       <div className="col-sm-6 offset-sm-5">
         <br /> <br />
-        <h1>Add Art</h1>
+     <form autocomplete="off" className='formdf' onSubmit={handleSubmit}>
+
+        <h1 id="add-cart-head">Add Art</h1>
         <input
           type="file"
+          required="required"
+          value={file}
           className="add-gallery"
           onChange={(e) => setFile(e.target.value)}
           placeholder="file"
-        />{" "}
+        />
         <br /> <br /> <br /> <br />
         <input
           type="text"
+          required="required"
+          value={title}
           className="add-gallery"
           onChange={(e) => setTitle(e.target.value)}
           placeholder="title"
-        />{" "}
+        />
         <br /> <br /> <br /> <br />
         <input
           type="text"
+          required="required"
+          value={description}
           className="add-gallery"
           onChange={(e) => setDescription(e.target.value)}
           placeholder="description"
-        />{" "}
+        />
         <br /> <br /> <br /> <br />
         <input
           type="text"
           className="add-gallery"
+          required="required"
+          value={price}
           onChange={(e) => setPrice(e.target.value)}
           placeholder="price"
-        />{" "}
+        />
         <br /> <br /> <br /> <br />
-        <button onClick={addGallery} className="add-btn">
+        <button className="add-btn" >
           {" "}
           Upload{" "}
         </button>
+        </form>
+
       </div>
       <br />
 

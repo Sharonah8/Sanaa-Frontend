@@ -6,8 +6,8 @@
     background-color:black;
 }
 
-.add-gallery-container, .h1 {
-    color: white;
+#add-cart-head {
+    color: black;
 }
 .add-btn{
     background-color: rgb(77, 76, 76);

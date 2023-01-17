@@ -116,7 +116,7 @@ function NavBar() {
                 </DropDownHeader>
                 {isOpen && (
                   <DropDownListContainer>
-                    <DropDownList>
+                    <DropDownList className="nav-whole">
                       <ListItem>
                         <li class="nav-item">
                           <Link
@@ -124,7 +124,7 @@ function NavBar() {
                             to="/AddGallery"
                             id="drop-down-nav"
                           >
-                            AddGallery
+                            Add~Gallery
                           </Link>
                         </li>
                       </ListItem>

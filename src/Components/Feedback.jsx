@@ -19,7 +19,9 @@ function Feedback() {
       body: JSON.stringify(formData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then(() => {
+        setValue('')
+      });
 
     let form = document.querySelector("form");
     let p = document.createElement("p");
