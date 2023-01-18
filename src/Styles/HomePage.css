@@ -7,7 +7,9 @@
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+ 
 }
+
 /* Typewriter effect 1 */
 @keyframes typing {
 
@@ -99,10 +101,13 @@
 #move-down {
   margin-left: -1%;
   font-size: 30px;
+  
+  
 }
 #move-up{
   font-weight:bold;
   font-size: 254%;
+
 }
 #pofppp{
   font-size: 1.8em;

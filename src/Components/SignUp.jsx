@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
-import LogIn from "./LogIn";
+// import LogIn from "./LogIn";
 import Footer from "./Footer";
 import "../Styles/SignUp.css";
 
@@ -9,7 +10,7 @@ function SignUp() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
-  const [welcomeMessage, setWelcomeMessage] = useState(false);
+  const [welcomeMessage, setWelcomeMessage] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -65,6 +66,7 @@ function SignUp() {
 
   return (
     <div className="signup-main">
+      <div className="background">
       <div className="box">
         <div className="form">
           <form onSubmit={handleSubmit}>
@@ -98,10 +100,10 @@ function SignUp() {
               />
               <i id="loginlines"></i>
             </div>
-            <p>{formErrors.email}</p>
-
-            <div className="input-group">
-              <input
+          <p>{formErrors.email}</p>
+          
+          <div className="input-group">
+            <input
                 type="password"
                 name="password"
                 placeholder="Password"
@@ -133,7 +135,8 @@ function SignUp() {
           </form>
         </div>
       </div>
-      <Footer />
+    </div>
+    <Footer />
     </div>
   );
 }

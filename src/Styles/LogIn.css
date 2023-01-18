@@ -1,19 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900%display=swap');
-.login-main
+.login-main{
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+}
+.background
 {
-    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597'); 
+    background-image: url('https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/90/758145/1.jpg?1597');
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-left: 100px;
+    /* background-size: cover;  */
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    
 }
 .box 
 {
 	position: relative;
-	width: 380px;
-	height: 420px;
-	background: #1c1c1c;
-	border-radius: 8px;
+    align-items: center;
+    border-radius: 8px;
 	overflow: hidden;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin-left: 50%;
+    width: 480px;
+    /* min-height: 100vh; */
+    height: 720px;
+    background: rgb(77, 76, 76);
+    /* margin-top: 50px; */
 }
 .box::before 
 {
@@ -22,8 +41,8 @@
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 380px;
-	height: 420px;
+	width: 480px;
+	height: 620px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,green,purple);
 	animation: animate 6s linear infinite;
@@ -35,8 +54,8 @@
 	position: absolute;
 	top: -50%;
 	/* left: -50%; */
-	width: 380px;
-	height: 420px;
+	width: 480px;
+	height: 620px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,orange,black);
 	animation: animate 6s linear infinite;
@@ -53,25 +72,6 @@
 		transform: rotate(360deg);
 	}
 }
-.box {
-    position: relative;
-    width: 380px;
-    height: 420px;
-    border-radius: 8px;
-    background: rgb(77, 76, 76);
-    overflow: hidden;
-}
-
-.box::before{
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, 
-    #45f4ff, #45f4ff);
-}
 
 .form {
     position: absolute;
@@ -83,6 +83,9 @@
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    
+    
 
 }
 .form h2 {
@@ -176,6 +179,10 @@ input[type='submit'] {
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
+}
+
+input[type='submit']:hover {
+
     color: white;
 }
 
@@ -185,7 +192,7 @@ input[type='submit'] {
     color: black;
     /* transform: scale(1.1);  */
     transition: ease-in-out 0.4s;
-  }
+}
 #login-section{
     color: white;
     margin-left: 20%;
@@ -194,4 +201,3 @@ input[type='submit'] {
     margin-left: 5%;
 
 }
-  

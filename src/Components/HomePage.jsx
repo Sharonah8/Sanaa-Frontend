@@ -2,7 +2,9 @@ import React from "react";
 import "../Styles/HomePage.css";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-
+// import { Feedback } from "@mui/icons-material";
+import FeedbackDisplay from "./FeedbackDisplay";
+import SectionMid from "./SectionMid";
 
 function HomePage() {
   return (
@@ -39,7 +41,7 @@ function HomePage() {
               of the special nature of art.
             </p>
             <Link to={"/Gallery"}>
-            <button id="home-page-btn">Go to store</button>
+              <button id="home-page-btn">Go to store</button>
             </Link>
           </div>
           <div classname="overlay">
@@ -51,6 +53,8 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <SectionMid />
+      <FeedbackDisplay />
       <Footer />
     </main>
   );

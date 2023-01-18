@@ -15,7 +15,6 @@ function MainGallery() {
       .then((resp) => {
         setImages(resp);
         setSearchValue(resp);
-       
       });
   }, []);
 
@@ -28,15 +27,12 @@ function MainGallery() {
   }
 
   return (
-    
     <div className="main-gallery">
       <Search change={change} />
       <GalleryList images = {images}/>
-      {/* <Cart images = {images}/> */}
-      
-      <GalleryList images = {images}/>      
+       
     </div>
-  )
+  );
 }
 
-export default MainGallery
+export default MainGallery;

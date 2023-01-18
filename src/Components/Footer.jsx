@@ -10,15 +10,15 @@ function Footer() {
         Live Intentionally . Live Authentically
       </p>
       <SocialIcon
-        url="https://twitter.com/jaketrent"
+        url="https://twitter.com/Sharonah_Ken?t=mVJTfg0Keo1YTiDmfyi7Fw&s=09"
         style={{ margin: 10  }}
       />
       <SocialIcon
-        url="https://linkedin.com/in/jaketrent"
+        url="https://www.linkedin.com/in/ian~kibui"
         style={{ margin: 10 }}
       />
       <SocialIcon
-        url="https://facebook.com/in/jaketrent"
+        url="https://www.facebook.com/ricky.murithi/"
         style={{ margin: 10 }}
       />
       <SocialIcon
