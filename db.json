@@ -21,7 +21,6 @@
       "image": "https://cdn.shopify.com/s/files/1/2279/7869/files/rainbow-portrait.jpg",
       "description": "The potriat inspired by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     },
-    
     {
       "id": 4,
       "title": "The Potrait",
@@ -50,7 +49,6 @@
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/african-wood-carving-rob-hemphill.jpg",
       "description": "The Darkening inspired by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
     },
-    
     {
       "id": 8,
       "image": "https://a.1stdibscdn.com/archivesE/upload/10152/44_14/p2060687/P2060687_l.jpeg"
@@ -58,7 +56,22 @@
     {
       "id": 8,
       "image": "https://cdn20.pamono.com/p/s/1/2/1273119_0la6cuenbw/italian-african-ceramic-father-elephant-sculpture-by-vg-design-and-laboratory-department.jpg"
+    },
+    {
+      "title": "React POST Request Example",
+      "id": 9
+    },
+    {
+      "title": "React POST Request Example",
+      "id": 10
+    },
+    {
+      "title": "React POST Request Example",
+      "id": 11
+    },
+    {
+      "title": "React POST Request Example",
+      "id": 12
     }
-    
   ]
 }
