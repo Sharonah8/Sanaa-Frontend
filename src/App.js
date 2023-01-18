@@ -23,7 +23,7 @@ function App() {
       <NavBar />
       
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        
         <Route exact path="/about" element={<About />} />
         <Route exact path="/gallery" element={<MainGallery/>} />
         <Route exact path="/addgallery" element={<AddGallery />} />
@@ -35,6 +35,7 @@ function App() {
         <Route exact path="/login" element={<LogIn />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/payment" element={<Payment />} />
+        <Route exact path="/" element={<HomePage />} />
       </Routes>
       {/* <Footer/> */}
     </div>

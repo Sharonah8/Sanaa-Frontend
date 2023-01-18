@@ -14,9 +14,8 @@ function AddGallery() {
   e.preventDefault();
   const site = {file,title,description,price}
    
-    
-    
-    fetch("http://localhost:3000/images",{
+      
+    fetch("http://127.0.0.1:3000/art_pieces",{
       method: 'POST',
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(site)

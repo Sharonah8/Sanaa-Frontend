@@ -44,7 +44,6 @@
     },
     {
       "id": 6,
-<<<<<<< HEAD
       "title": "The Mystery",
       "price": 111,
       "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/african-wood-carving-rob-hemphill.jpg",
@@ -61,31 +60,6 @@
     {
       "title": "React POST Request Example",
       "id": 9
-    },
-    {
-      "title": "React POST Request Example",
-      "id": 10
-    },
-    {
-      "title": "React POST Request Example",
-      "id": 11
-    },
-    {
-      "title": "React POST Request Example",
-      "id": 12
-=======
-      "title": "The Culture",
-      "price": 150,
-      "image": "https://www.corban.edu/wp-content/uploads/2021/09/the-arts.jpg",
-      "description": "The Awakening  inspired Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-    },
-    {
-      "file": "C:\\fakepath\\_ (2).jpeg",
-      "title": "ragner",
-      "description": "ragner",
-      "price": "200",
-      "id": 7
->>>>>>> itasks
     }
   ]
 }

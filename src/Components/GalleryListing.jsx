@@ -12,7 +12,7 @@ function GalleryListing() {
   
   async function deleteOperation(id) {
     // alert(id)
-    let result = await fetch("http://localhost:3000/images/" + id, {
+    let result = await fetch("http://127.0.0.1:3000/art_pieces/" + id, {
       method: "DELETE",
     });
     result = await result.json();
@@ -20,7 +20,7 @@ function GalleryListing() {
     getData();
   }
   async function getData() {
-    let result = await fetch("http://localhost:3000/images");
+    let result = await fetch("http://127.0.0.1:3000/art_pieces");
     result = await result.json();
     setData(result);
   }

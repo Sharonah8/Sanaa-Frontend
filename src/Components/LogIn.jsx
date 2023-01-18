@@ -12,8 +12,8 @@ function LogIn() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(email, password);
-
-    fetch("http://localhost:3000/users", {
+    
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,8 @@ function LogIn() {
       }),
     }).then((r) => {
       if (r.ok) {
-        r.json().then(() => {
+        r.json().then((data) => {
+          localStorage.setItem("token", data.token);
           // navigate("/Gallery")
         });
       } else {
@@ -32,7 +33,7 @@ function LogIn() {
       }
     });
   };
-
+  
   return (
    <div className="login-main">
     <div className="background">
@@ -72,12 +73,14 @@ function LogIn() {
               </a>
               {/* <a href="">Sign Up</a> */}
             </div>
+            <Link to={"/"}>
             <input
               type="submit"
               value="Login"
               onClick={() => handleSubmit()}
               id="loginbtn"
             />
+            </Link>
           </form>
           <Link to={"/signup"}>
             <span id="login-section"> Don't have an account? Sign up</span>

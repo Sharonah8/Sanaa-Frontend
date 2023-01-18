@@ -5,11 +5,11 @@ import "../Styles/FeedbackDisplay.css";
 function FeedbackDisplay() {
   const [feedbacks, setFeedback] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3003/feedback`)
+    fetch(`http://127.0.0.1:3000/reviews`)
       .then((res) => res.json())
       .then((data) => setFeedback(data));
   }, []);
-
+  
   console.log("This the fetch data", feedbacks);
   function handleBlur(e) {
     console.log(e.target.innerText);
@@ -20,9 +20,9 @@ function FeedbackDisplay() {
     // })
     // console.log('This is new comment:',changedComment)
     // // console.log("handle Blur")
-
+    
     fetch(
-      `https://powerful-escarpment-81140.herokuapp.com/feedbacks/${e.target.id}`,
+      `http://127.0.0.1:3000/reviews/${e.target.id}`,
       {
         method: "PATCH",
         headers: {
@@ -64,7 +64,7 @@ function FeedbackDisplay() {
     console.log("This is newfeedback:", newfeedbacks);
 
     fetch(
-      `https://powerful-escarpment-81140.herokuapp.com/feedbacks/${e.target.id}`,
+      `http://127.0.0.1:3000/reviews/${e.target.id}`,
       {
         method: "DELETE",
         headers: {
