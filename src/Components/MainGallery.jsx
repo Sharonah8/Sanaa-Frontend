@@ -10,14 +10,14 @@ function MainGallery() {
   const [images, setImages] = useState([]);
   const [searchValue, setSearchValue] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/art_pieces", )
+    fetch("http://127.0.0.1:3000/art_pieces", {headers: {'Authorization': `${localStorage.getItem("token")}`} } )
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);
         setSearchValue(resp);
       });
   }, []);
-  // {headers: {'Authorization': `${localStorage.getItem("token")}`} }
+  
   function change(event) {
     setImages(
       searchValue.filter((images) =>
