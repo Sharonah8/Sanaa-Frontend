@@ -41,6 +41,13 @@
       "price": 150,
       "image": "https://www.corban.edu/wp-content/uploads/2021/09/the-arts.jpg",
       "description": "The Awakening  inspired Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    },
+    {
+      "file": "C:\\fakepath\\de8xig1-fab1cd10-42b2-4f17-809c-e72e563ae6af.jpg",
+      "title": "test",
+      "description": "test",
+      "price": "test",
+      "id": 7
     }
   ]
 }
