@@ -3,7 +3,7 @@ import "../Styles/AddGallery.css";
 import Footer from "./Footer";
 
 function AddGallery() {
-  const [file, setFile] = useState('');
+  const [image_url, setImage_url] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
@@ -12,7 +12,7 @@ function AddGallery() {
 
   function handleSubmit (e) {
   e.preventDefault();
-  const site = {file,title,description,price}
+  const site = {image_url,title,description,price}
    
       
     fetch("http://127.0.0.1:3000/art_pieces",{
@@ -22,7 +22,7 @@ function AddGallery() {
     })
     .then((res) => res.json())
     .then(()=>{
-      setFile('')   
+      setImage_url('')   
       setTitle('')
       setDescription('')
       setPrice('')
@@ -39,12 +39,12 @@ function AddGallery() {
 
         <h1 id="add-cart-head">Add Art</h1>
         <input
-          type="file"
+          type="input-field"
           required="required"
-          value={file}
+          value={image_url}
           className="add-gallery"
-          onChange={(e) => setFile(e.target.value)}
-          placeholder="file"
+          onChange={(e) => setImage_url(e.target.value)}
+          placeholder="Enter Image_url"
         />
         <br /> <br /> <br /> <br />
         <input

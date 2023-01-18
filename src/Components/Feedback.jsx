@@ -6,7 +6,7 @@ function Feedback() {
   const [formData, setValue] = useState({
     comment: "",
     name: "",
-    photo_url: "",
+    image_url: "",
   });
   function handleSubmit(e) {
     e.preventDefault();
@@ -72,12 +72,12 @@ function Feedback() {
           <br /> <br />
           <label htmlFor="photo_url">Your photo url:</label>
           <input
-            required
+            // required
             type="text"
             name="image_url"
             id="photo_url"
             onChange={handleChange}
-            value={formData.photo_url}
+            value={formData.image_url}
             placeholder="Enter photo_url"
           />{" "}
           <br />

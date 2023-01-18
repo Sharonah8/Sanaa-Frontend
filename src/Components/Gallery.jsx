@@ -44,7 +44,7 @@ function Gallery({ img }) {
   const handleClose = () => {
     setOpen(false);
   };
-
+  
   return (
     <div className="container">
       <div className="product">
@@ -55,7 +55,7 @@ function Gallery({ img }) {
             Quick View
           </button>
           <img
-            src={img.image}
+            src={img.image_url}
             clasName="product-img"
             alt="product-img"
             width={299}
@@ -92,7 +92,7 @@ function Gallery({ img }) {
           <div className="popup-view">
             <div className="popup-card-inner">
               <div className="product-img-inner">
-                <img src={img.image} alt="" width={400} height={500}></img>
+                <img src={img.image_url} alt="" width={400} height={500}></img>
               </div>
               <div className="info-inner">
                 <h2 id="info-inner-h2">

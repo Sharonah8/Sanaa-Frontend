@@ -47,7 +47,7 @@ function GalleryListing() {
                 <tr>
                   <td>{img.id}</td>
                   <td>
-                    <img style={{ width: 100 }} src={img.image} alt="" />
+                    <img style={{ width: 100 }} src={img.image_url} alt="" />
                   </td>
                   <td>{img.title}</td>
                   <td>{img.description}</td>

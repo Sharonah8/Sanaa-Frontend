@@ -32,7 +32,7 @@ const Cart = ({img}) => {
             <>
             <div className="cart-cards">
                 <div className='cart'>
-                    <img className='cart_image' src={img.image} alt={img.title} />
+                    <img className='cart_image' src={img.image_url} alt={img.title} />
                     <div className='description'>
                         <h3>{img.title}</h3>
                         <p>

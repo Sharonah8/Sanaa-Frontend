@@ -5,7 +5,7 @@ import "../Styles/FeedbackDisplay.css";
 function FeedbackDisplay() {
   const [feedbacks, setFeedback] = useState([]);
   useEffect(() => {
-    fetch(`http://127.0.0.1:3000/reviews`)
+    fetch("http://127.0.0.1:3000/reviews")
       .then((res) => res.json())
       .then((data) => setFeedback(data));
   }, []);
@@ -35,14 +35,14 @@ function FeedbackDisplay() {
       .then((res) => res.json())
       .then((data) => console.log(data));
   }
-
+  
   const cards = feedbacks.map((feedback) => {
     return (
       <div key={feedback.id} className="feedbackCard">
         <p contentEditable="true" onBlur={handleBlur} id={feedback.id}>
           {feedback.comment}
         </p>
-        <img src={feedback.photo_url} alt="img" id="feed-pic" />
+        <img src={feedback.image_url} alt="img" id="feed-pic" />
         <p>{feedback.name}</p>
         {/* <button onClick={handleDelete} id="my-x-btn">x</button> */}
         <button onClick={handleDelete} id={feedback.id}>
