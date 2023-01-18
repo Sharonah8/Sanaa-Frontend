@@ -36,8 +36,11 @@
   transform: scale(1.1);
 }
 .nav-whole {
-  background-color: gray;
+  background-color: rgb(32, 32, 32);
   height: 10vh;
   transition: 0.5s;
 
+}
+#drop-down-gallery{
+  margin-left: 40%;
 }

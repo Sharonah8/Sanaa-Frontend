@@ -107,10 +107,12 @@ function NavBar() {
 
               {/* <Main> */}
               <DropDownContainer>
-                <DropDownHeader onMouseOver={toggling}>
+                <DropDownHeader onClick={toggling}>
                   <li class="nav-item">
                     <Link class="nav-link text-light" to="/Gallery">
                       Gallery
+                      <i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-gallery"></i>
+
                     </Link>
                   </li>
                 </DropDownHeader>
@@ -149,9 +151,13 @@ function NavBar() {
               {/* </Main> */}
 
               <li class="nav-item">
-              <Link to="/Cart">
-              <i class="fa fa-shopping-cart" aria-hidden="true" id="cart-sec"></i>
-              </Link>
+                <Link to="/Cart">
+                  <i
+                    class="fa fa-shopping-cart"
+                    aria-hidden="true"
+                    id="cart-sec"
+                  ></i>
+                </Link>
                 {/* <Link class="nav-link text-light" to="/Cart">
                   Cart
                 </Link> */}
