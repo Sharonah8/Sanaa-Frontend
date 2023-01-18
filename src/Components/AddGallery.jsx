@@ -15,8 +15,8 @@ function AddGallery() {
   const site = {file,title,description,price}
    
     
-  
-    fetch("http://localhost:8000/images",{
+    
+    fetch("http://localhost:3000/images",{
       method: 'POST',
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(site)

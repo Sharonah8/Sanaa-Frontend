@@ -10,7 +10,7 @@ function Feedback() {
   });
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/feedback", {
+    fetch("http://localhost:3003/feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

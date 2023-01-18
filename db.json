@@ -41,6 +41,13 @@
       "price": 150,
       "image": "https://www.corban.edu/wp-content/uploads/2021/09/the-arts.jpg",
       "description": "The Awakening  inspired Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    },
+    {
+      "file": "C:\\fakepath\\_ (2).jpeg",
+      "title": "ragner",
+      "description": "ragner",
+      "price": "200",
+      "id": 7
     }
   ]
 }

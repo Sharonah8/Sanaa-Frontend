@@ -5,7 +5,7 @@ import "../Styles/FeedbackDisplay.css";
 function FeedbackDisplay() {
   const [feedbacks, setFeedback] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/feedback`)
+    fetch(`http://localhost:3003/feedback`)
       .then((res) => res.json())
       .then((data) => setFeedback(data));
   }, []);

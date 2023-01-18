@@ -8,7 +8,7 @@ function MainGallery() {
   const [images, setImages] = useState([]);
   const [searchValue, setSearchValue] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/images")
+    fetch("http://localhost:3000/images")
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);
