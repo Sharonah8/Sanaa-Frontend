@@ -47,7 +47,24 @@
     border: none;
     cursor: pointer;
 }
-
+#cart-empty-txt{
+    background-color: aliceblue;
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+    font-style: italic;
+    width: 20%;
+}
+#cart-empty-txt-pay{
+    background-color: aliceblue;
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+    font-style: italic;
+    width: 40%;
+    margin-left: 35%;
+    
+}
 .row {
     margin: auto;
     color: red;
