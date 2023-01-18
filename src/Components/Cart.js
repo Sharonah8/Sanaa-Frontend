@@ -20,7 +20,9 @@ const Cart = ({img}) => {
     const emptyCart = () => {
         return (
             <div className="row">
-              <h3>Your Cart is Empty</h3>
+              <h3 id = 'cart-empty-txt'>Hi User...Your Cart is Empty!!!</h3>
+              <p id='emoji-cart'>&#129319;&#129319;&#129319;&#129319;</p>
+
             </div>
         );
       };
@@ -50,7 +52,7 @@ const Cart = ({img}) => {
             <>
                 <div className='btn'>
                     <Link to='/payment'>
-                        <h3>Proceed to Payment</h3>
+                        <h3 id='cart-empty-txt-pay'>Proceed to Payment</h3>
                     </Link>
                 </div>
             </>
