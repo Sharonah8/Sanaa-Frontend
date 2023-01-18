@@ -1,7 +1,14 @@
-.cart {
+.cart img{
     color: #000;
     border: 2px solig lawngreen;
+    
+    
 }
+
+/* .cart-cards {
+  
+    
+} */
 
 .empty_cart h3 {
     color: white;
@@ -11,16 +18,16 @@
 }
 
 .description h3 {
-    color: white;
+    color: black;
 }
 
 
 .description p {
-    color: white;
+    color: black;
 }
 
 .total {
-    color: lightgreen;
+    color: black;
     font-weight: bold;
     font-size: 20px;
 }
@@ -64,7 +71,12 @@
 
 img.cart_image {
     width: 250px;
+
 }
+/* .cart_image {
+  margin-left: 10%;
+  margin-top: 5%;
+} */
 
 .btn, .h3{
     color: red;

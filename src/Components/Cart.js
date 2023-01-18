@@ -6,7 +6,7 @@ import { GrFormAdd } from 'react-icons/gr'
 import '../Styles/cart.css';
 import { Link } from 'react-router-dom';
 
-const Cart = ({gallery}) => {
+const Cart = ({img}) => {
     const state = useSelector((state) => state.handleCart);
     const dispatch = useDispatch();
   
@@ -28,6 +28,7 @@ const Cart = ({gallery}) => {
     const cartItems = (img) => {
         return (
             <>
+            <div className="cart-cards">
                 <div className='cart'>
                     <img className='cart_image' src={img.image} alt={img.title} />
                     <div className='description'>
@@ -39,6 +40,7 @@ const Cart = ({gallery}) => {
                         <button style={{color: 'green'}} className='actions' onClick={() => handleAdd(img)}><GrFormAdd /></button>
                     </div>
                 </div>
+            </div>
             </>
         )
     }

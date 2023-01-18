@@ -1,31 +1,43 @@
 #nav-btn-login {
-    background-color: rgb(77, 76, 76);
-    color: white;
-    border-radius: 15px;
-    font-weight: bold;
-
+  background-color: rgb(77, 76, 76);
+  color: white;
+  border-radius: 15px;
+  font-weight: bold;
 }
 
 #nav-btn-login:hover {
-    background-color: white;
-    color: black;
-    /* transform: scale(1.1);  */
-    transition: ease-in-out .4s
+  background-color: white;
+  color: black;
+  /* transform: scale(1.1);  */
+  transition: ease-in-out 0.4s;
 }
 
-#img-mini{
-    width: 173px;
-    height: 50px;
-    margin-left: 2.2cm;
-    object-fit: cover;
-  
+#img-mini {
+  width: 173px;
+  height: 50px;
+  margin-left: 2.2cm;
+  object-fit: cover;
 }
-#drop-down-nav{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    margin-left: 1%;
+#drop-down-nav {
+  color: white;
+  font-weight: bold;
+  margin-left: -16%;
+  margin-top: -20%;
+  width: 130px;
 }
-#drop-down-nav:hover{
+#drop-down-nav:hover {
   transform: scale(1.1);
+}
+#cart-sec {
+  color: white;
+  margin-top: 75%;
+}
+#cart-sec:hover {
+  transform: scale(1.1);
+}
+.nav-whole {
+  background-color: gray;
+  height: 10vh;
+  transition: 0.5s;
+
 }

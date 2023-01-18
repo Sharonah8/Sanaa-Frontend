@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import GalleryList from "./GalleryList"
+// import Cart from "./Cart";
 
 
 
@@ -9,12 +10,11 @@ function MainGallery() {
   const [images, setImages] = useState([]);
   const [searchValue, setSearchValue] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/images")
+    fetch("http://localhost:8000/images")
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);
         setSearchValue(resp);
-       
       });
   }, []);
 
@@ -27,12 +27,12 @@ function MainGallery() {
   }
 
   return (
-    
     <div className="main-gallery">
       <Search change={change} />
-      <GalleryList images = {images}/>      
+      <GalleryList images = {images}/>
+       
     </div>
-  )
+  );
 }
 
-export default MainGallery
+export default MainGallery;

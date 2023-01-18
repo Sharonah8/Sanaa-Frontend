@@ -6,7 +6,7 @@ function UpdateGallery(props) {
     console.warn("props", props.match.params.id)
     const [img, setData] = useState([])
     useEffect(async ()=>{
-        let result = await fetch("http://localhost:3000/images"+props.match.params.id);
+        let result = await fetch("http://localhost:8000/images"+props.match.params.id);
         result = await result.json();
         setData(result)
     },[])
@@ -20,9 +20,9 @@ function UpdateGallery(props) {
             <input type="text" defaultValue={img.title} /> <br /> <br />
             <input type="text" defaultValue={img.description} /> <br /> <br />
             <input type="text" defaultValue={img.price} /> <br /> <br />
-            <img style={{width:50}} src={"http://localhost:3000/images/"+img.file} />
+            <img style={{width:50}} src={"http://localhost:8000/images/"+img.file} />
             <br /> <br />
-            <button>
+            <button id = 'update-btn'>
                update
             </button>
         </div>

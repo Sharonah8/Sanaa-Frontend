@@ -6,6 +6,18 @@
     background-color:black;
 }
 
-.add-gallery-container, .h1 {
+#add-cart-head {
+    color: black;
+}
+.add-btn{
+    background-color: rgb(77, 76, 76);
     color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.add-btn:hover{
+    background-color: white;
+    color: black;
+    /* transform: scale(1.1);  */
+    transition: ease-in-out 0.4s;
 }

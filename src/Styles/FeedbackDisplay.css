@@ -4,6 +4,7 @@
     text-align: center;
     height: 10%;
     margin: 100px;
+ 
 }
 
 .fcontainer{
@@ -11,6 +12,7 @@
  justify-content: space-around;
  margin-top: 4%;
  margin-left: 5%;
+
 }
 .fcontainer h1{
  font-family:'Poppins', sans-serif ;
@@ -18,5 +20,10 @@
 .feedbackCard img{
     height: 50px;
     width: 35;
+    
 }
-
+#feed-pic{
+    width: 100%;
+    padding: 0%;
+    
+    }

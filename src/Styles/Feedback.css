@@ -3,6 +3,10 @@
 .cont3{
     display: flex;
     justify-content: center;
+    background-image: url("https://www.ctm.co.ke/media/catalog/product/cache/962f0fa93f6ebc4f041fe71bedef3e3f/m/i/mika-slate-wall-cladding-tile-95x300-ls1.jpg");
+    
+
+
 }
 #feedback{
     text-align: center;
@@ -12,6 +16,7 @@
     /* background-repeat: no-repeat;
     background-size: cover;
     background-color:black; */
+    
 }
 #feedback h1, h2{
     font-size: 2.8rem;
@@ -19,11 +24,11 @@
 }
 .cont3 form{
     border: 1px solid black;
-    height: 800px;
-    padding: 50px;
-    width: 40%;
+    height: 300px;
+    padding: 0px;
+    width: 20%;
     font-family: 'Poppins', sans-serif ;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-align: left;
     color: black;
 }
@@ -35,56 +40,80 @@
 } */
 #comment{
     position: relative;
-    left: 150px;
-    width: 60%;
-    padding: 10px;
+    left: 0px;
+    width: 100%;
+    
 }
 #comm{
     position: relative;
     bottom: 100px;
 }
 #name{
-    position: relative;
-    left: 195px;
-    width: 50%;
-    padding: 10px;
+    position: absolute;
+    left: 0px;
+    width: 20%;
+    margin-top: 0%;
+    margin-left: 40.1%;
+
+ 
 }
 #imgUrl{
     position: relative;
     left: 100px;
     width: 50%;
     padding: 10px;
+
 }
-#submit1{
-    background-color: #c1a267;
-    font-family:'Poppins', sans-serif;
-    font-size: 2rem;
-    border: #c1a267 1px solid;
-    padding: 10px;
-    width: 50%;
+#photo_url{
+    color: black;
+    width: 100%;
+    margin-left: 0%;
+}
+#submit1{  
+    background-color: rgb(77, 76, 76);
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+
+    /* background-color: black;
+    font-family:'Poppins', sans-serif; */
+    font-size: 1.5rem;
+    /* border: #c1a267 1px solid; */
+    /* padding: 10px; */
+    width: 35%;
     color: white;
     position: relative;
-    top: 80px;
-    left: 180px;
+    margin-left: 35%; 
+    /* top: 80px;
+    left: 180px; */
 }
 
 #submit1:hover{
-    background-color: #fbd58a;
+    background-color:white;
+    color: black;
 }
 .feedbackCard{
     border: 1px black solid;
     border-radius: 4px;
-    box-shadow: 10px 10px 5px #e3e3e3;
+    box-shadow: 10px 10px 5px #414141;
+    background: white;
 }
  .feedbackCard:hover{
     box-shadow: 10px 10px 5px #c9c8c8; 
  }
  .feedbackCard button{
-    width: 20%;
-    margin-bottom: 10px;
-    background-color: red;
+    background-color:rgb(223, 217, 217);
+    border:#c9c8c8;
  }
 .cont2{
     margin-top: -5%;
     margin-bottom: 15%;
+
 }
+#what-about-us{
+ width: 100%;
+ margin-left: 0%;
+}
+#what-about-us:hover{
+    color: white;
+   }

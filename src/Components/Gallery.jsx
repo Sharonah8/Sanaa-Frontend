@@ -1,4 +1,4 @@
-import  React, { useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Review from "./Review";
 import Button from "@mui/material/Button";
@@ -9,10 +9,10 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
-import { useDispatch } from 'react-redux';
-import { addCart } from '../redux/action';
-import { useParams } from 'react-router-dom';
-
+import { useDispatch } from "react-redux";
+import { addCart } from "../redux/action";
+import { useParams } from "react-router-dom";
+import Feedback from "./Feedback";
 
 // import Slide from '@mui/material/Slide';
 // import { TransitionProps } from '@mui/material/transitions';
@@ -27,14 +27,13 @@ import { useParams } from 'react-router-dom';
 // });
 
 function Gallery({ img }) {
-  const {id} = useParams();
+  const { id } = useParams();
   const [gallery] = useState([]);
 
   const dispatch = useDispatch();
   const addGallery = (gallery) => {
-      dispatch(addCart(gallery));
-  }
-
+    dispatch(addCart(gallery));
+  };
 
   const [open, setOpen] = React.useState(false);
 
@@ -47,63 +46,79 @@ function Gallery({ img }) {
   };
 
   return (
+    <div className="container">
+      <div className="product">
+        <div className="product-card">
+          <h2 className="product-name">{img.title}</h2>
+          <span className="product-price">${img.price}.00</span>
+          <button className="popup-btn" onClick={handleClickOpen}>
+            Quick View
+          </button>
+          <img
+            src={img.image}
+            clasName="product-img"
+            alt="product-img"
+            width={299}
+            height={320}
+          ></img>
+        </div>
+        <Dialog
+          fullScreen
+          open={open}
+          onClose={handleClose}
+          // TransitionComponent={Transition}
+        >
+          <AppBar sx={{ position: "relative" }}>
+            <Toolbar id="toolbar">
+              <IconButton
+                edge="start"
+                color="inherit"
+                onClick={handleClose}
+                aria-label="close"
+              >
+                <CloseIcon />
+              </IconButton>
+              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                <i>
+                  <u>About This Potrait</u>
+                </i>
+              </Typography>
+              <Button autoFocus color="inherit" onClick={handleClose}>
+                Back
+              </Button>
+            </Toolbar>
+          </AppBar>
 
-    
-    
-    <div className='container'>
-      <div className='product'>
-        <div className='product-card' >
-          <h2 className='product-name'>{img.title}</h2>
-            <span className='product-price'>${img.price}.00</span>
-             <button className='popup-btn'onClick={handleClickOpen} >Quick View</button>
-              <img src={img.image} clasName="product-img" alt='product-img' width={299} height={320}></img>
-         </div>
-         <Dialog
-      fullScreen
-      open={open}
-      onClose={handleClose}
-      // TransitionComponent={Transition}
-    >
-      <AppBar sx={{ position: 'relative' }}>
-        <Toolbar id ='toolbar'>
-          <IconButton
-            edge="start"
-            color="inherit"
-            onClick={handleClose}
-            aria-label="close"
-          >
-            <CloseIcon />
-          </IconButton>
-          <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-           <i><u>About This Potrait</u></i>
-          </Typography>
-          <Button autoFocus color="inherit" onClick={handleClose}>
-            Back
-          </Button>
-        </Toolbar>
-      </AppBar>
-      
-          <div className='popup-view'>
-            <div className='popup-card-inner'>
-              <div className='product-img-inner'>
-                <img src={img.image} alt=''width={400} height={500} ></img>
+          <div className="popup-view">
+            <div className="popup-card-inner">
+              <div className="product-img-inner">
+                <img src={img.image} alt="" width={400} height={500}></img>
               </div>
-              <div className='info-inner'>
-                <h2 id='info-inner-h2' >{img.title}.<br/><span id='info-inner-h2-span'><u>info:-</u></span></h2>
-                <p id='info-inner-desc'>{img.description}</p>
-                <p id = 'info-inner-price'>${img.price}.00</p>
-                 <button onClick={() => addGallery(gallery)}>Add to cart</button>
-                   <Link to={"/review"}>
+              <div className="info-inner">
+                <h2 id="info-inner-h2">
+                  {img.title}.<br />
+                  <span id="info-inner-h2-span">
+                    <u>info:-</u>
+                  </span>
+                </h2>
+                <p id="info-inner-desc">{img.description}</p>
+                <p id="info-inner-price">${img.price}.00</p>
+                <Link to={"/Cart"}>
+                  <button onClick={() => addGallery(img)} id="add-cart-btn">
+                    Add to cart
+                  </button>
+                </Link>
+                {/* <Link to={"/review"}>
                    <button onClick={() => addGallery(gallery)}>Review</button>
-                  </Link>
-                 <Review  />
+                  </Link> */}
+                <Review />
               </div>
             </div>
           </div>
-          </Dialog>
-
-       </div>
-     </div>
+          <Feedback />
+        </Dialog>
+      </div>
+    </div>
   );
 }
 
