@@ -9,26 +9,25 @@ function Feedback() {
   const [formData, setValue] = useState({
     comment: "",
     name: "",
-    image_url: "https://assets.manutd.com/AssetPicker/images/0/0/16/247/1111860/Player_Profile_Thumbnail_Mens_2223_Kit_Fred1658218415344_large.jpg",
+    image_url:
+      "https://i.postimg.cc/SNXhBGBP/Sanaa-logo-a-better-world-through-creativity-200w.png",
     user_id: userId,
-    art_piece_id: artPieceId
-    
+    art_piece_id: artPieceId,
   });
   // console.log("art_piece_id", userId);
-
 
   function handleSubmit(e) {
     e.preventDefault();
     fetch("http://localhost:3000/reviews", {
       method: "POST",
-      headers: { "Content-Type": "application/json"},
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    })
-      // .then((res) => res.json())
-      // .then(() => {
-      //   setValue('')
-      // });
-      
+    });
+    // .then((res) => res.json())
+    // .then(() => {
+    //   setValue('')
+    // });
+
     let form = document.querySelector("form");
     let p = document.createElement("p");
     document.getElementById("feedback").append(p);
@@ -83,12 +82,12 @@ function Feedback() {
             name="image_url"
             id="photo_url"
             onChange={handleChange}
-            value="https://assets.manutd.com/AssetPicker/images/0/0/16/247/1111860/Player_Profile_Thumbnail_Mens_2223_Kit_Fred1658218415344_large.jpg"
+            value="https://i.postimg.cc/SNXhBGBP/Sanaa-logo-a-better-world-through-creativity-200w.png://assets.manutd.com/AssetPicker/images/0/0/16/247/1111860/Player_Profile_Thumbnail_Mens_2223_Kit_Fred1658218415344_large.jpg"
             placeholder="Enter photo_url"
           />
           <br />
           {/* <Link to={"/"}> */}
-            <input type="submit" id="submit1" />
+          <input type="submit" id="submit1" />
           {/* </Link> */}
         </form>
       </div>
