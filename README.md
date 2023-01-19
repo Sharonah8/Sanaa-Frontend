@@ -24,7 +24,7 @@ SANAA ART
 
 ## General Information:
 
-SANAA ART:- Sanaa is an e-commerce platform designed to host classic art pieces. It seeks to bridge the gap between local and international artists and their customers. It provides a platform for them to interact and buy and sell their art pieces without the need for a middle-man, thus promoting the artists and providing a safe platform for transaction between the artists and the buyers.
+SANAA ART:- Sanaa is an e-commerce platform designed to host classic art pieces. It seeks to bridge the gap between local and international artists and their customers. It provides a platform for them to interact, buy and sell their art pieces without the need for a middle-man, thus promoting the artists and providing a safe platform for transaction between the artists and the buyers.
 
 ## How to Use the Website
 
