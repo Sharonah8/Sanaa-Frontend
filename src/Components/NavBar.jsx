@@ -56,7 +56,7 @@ function NavBar() {
   const toggling = () => setIsOpen(!isOpen);
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleLogout() {
     fetch("http://localhost:3000/logout", {
       method: "DELETE",
       head: "no-content"
@@ -140,7 +140,7 @@ function NavBar() {
                         <li class="nav-item">
                           <Link
                             class="nav-link text-light"
-                            to="/AddGallery"
+                            to={localStorage.getItem("token")? "/AddGallery" : "/login"}
                             id="drop-down-nav"
                           >
                             Add~Gallery
@@ -151,7 +151,7 @@ function NavBar() {
                         <li class="nav-item">
                           <Link
                             class="nav-link text-light"
-                            to="/GalleryListing"
+                            to={ localStorage.getItem("token") ? "/GalleryListing" : "/login"}
                             id="drop-down-nav"
                           >
                             GalleryListing
@@ -184,7 +184,7 @@ function NavBar() {
               { localStorage.getItem("token") ?
                 (<li class="nav-item">
                   <Link class="nav-link text-light" to="/LogIn">
-                    <button id="nav-btn-login" onClick={ handleClick }>Logout</button>
+                    <button id="nav-btn-login" onClick={ handleLogout }>Logout</button>
                   </Link>
                 </li>) :
                 (<div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Styles/AddGallery.css";
 import Footer from "./Footer";
 
-function AddGallery() {
+function AddGallery({login}) {
   const [image_url, setImage_url] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');

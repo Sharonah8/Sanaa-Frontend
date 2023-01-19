@@ -33,7 +33,7 @@ function MainGallery({ login }) {
     // (
     <div className="main-gallery" >
       <Search change={ change } />
-      <GalleryList images={ images } />
+      <GalleryList images={ images } login={login}/>
 
     </div>
     // )
