@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About The Project
 
-## Available Scripts
+# Project Name
 
-In the project directory, you can run:
+SANAA ART
 
-### `npm start`
+## Authors:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    1. Sharon Nyamongo – Scrum Master & Overseer Developer.
+    2. Ian Gacheru  – FrontEnd Developer & Assistant Scrum Master
+    3. Dismas Ng'oda – FrontEnd Developer & Backend Developer.
+    4. Erick Muriithi – FrontEnd Developer & Backend Developer
+    5. Ian Mike – FrontEnd Developer & Figma Designer
+    6. Ruth Mwangeka – FrontEnd Developer & Backend Developer
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents:
 
-### `npm test`
+- [General Information](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Contact](#contact)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## General Information:
 
-### `npm run build`
+SANAA ART:- Sanaa is an e-commerce platform designed to host classic art pieces. It seeks to bridge the gap between local and international artists and their customers. It provides a platform for them to interact and buy and sell their art pieces without the need for a middle-man, thus promoting the artists and providing a safe platform for transaction between the artists and the buyers.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Use the Website
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### step 1: To get to the page where you register an account, use the navigation in the page's upper right corner. When prompted, enter your credentials as needed and press Enter or click register button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://i.postimg.cc/RhfcMG0T/Screenshot-from-2023-01-19-12-24-25.png" width="900px"/>
 
-### `npm run eject`
+### step 2: If you already have an account, clicking the sign in button on the navbar will take you to a screen where you must enter both your username and password to access it. according to the picture below
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://i.postimg.cc/X7b2ry0v/Screenshot-from-2023-01-19-12-33-12.png" width="900px"/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    1. React JS - Is used to build the reactivity of the page and functionality.
+    2. CSS - Is used to style the pages.
+    3. Ruby - Used Sinatra and active record for db setup.
+    4. Matrial-UI- Icons - the icons showed on the app are imported from material ui website.
+    5. Figma-UI design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Setup
 
-## Learn More
+To run this project, one must have either of the following;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    1. The live Frontend link to this repository available on both the project repository About and at the end of this README file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    2. Fork and clone this repository and have Visual Studio Code (Windows) or Code (Linux) and run the following commands in the local project                     directory:
 
-### Code Splitting
+        ◦ Run "npm install" to install the project dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        ◦ Run "npm install react-router-dom@6.4.3" to install a compatible version of react-router-dom.
 
-### Analyzing the Bundle Size
+        ◦ Run "npm start" command in the terminal to get the React App running.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Requirements
 
-### Making a Progressive Web App
+A computer, Ipad, tablet or phone - An access to internet connection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Copyright and License (MIT).
 
-### Advanced Configuration
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Copyright (c) [2023] [Sharon and others...]
 
-### Deployment
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### `npm run build` fails to minify
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact.
+
+    1. Dismas Ng'oda – https://github.com/FaithGacheri.
+
+    2. Erick Muriithi - https://github.com/rickymurithi.
+
+    3. Ian Mike - https://github.com/Bit-Bytes-Bits.
+
+    4. Ian Gacheru - https://github.com/GacheruIan.
+
+    5. Ruth Mwangeka - https://github.com/Mulukimwangeka.
+
+    6. Sharon Nyamongo - https://github.com/Sharonah8.
+
+## Live Netlify Page Link.
+
+Frontend link:
+Backend API:
+
+Copyright (c) 2023 Sharon Nyamongo and others...
+
+[Go Back to the top](#portfolio)
