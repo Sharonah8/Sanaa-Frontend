@@ -7,6 +7,8 @@ import FeedbackDisplay from "./FeedbackDisplay";
 import SectionMid from "./SectionMid";
 
 function HomePage() {
+  console.log(localStorage.getItem("userdata"))
+  console.log(localStorage.getItem("token"))
   return (
     <main>
       <div className="home-page">

@@ -3,26 +3,32 @@ import { Link } from "react-router-dom";
 import "../Styles/Feedback.css";
 
 function Feedback() {
+  const artPieceId = localStorage.getItem("art_piece_id");
+  const userId = localStorage.getItem("userId");
+
   const [formData, setValue] = useState({
     comment: "",
     name: "",
-    image_url: "",
+    image_url: "https://assets.manutd.com/AssetPicker/images/0/0/16/247/1111860/Player_Profile_Thumbnail_Mens_2223_Kit_Fred1658218415344_large.jpg",
+    user_id: userId,
+    art_piece_id: artPieceId
+    
   });
+  // console.log("art_piece_id", userId);
+
+
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://127.0.0.1:3000/reviews", {
+    fetch("http://localhost:3000/reviews", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+      headers: { "Content-Type": "application/json"},
       body: JSON.stringify(formData),
     })
-      .then((res) => res.json())
-      .then(() => {
-        setValue('')
-      });
-
+      // .then((res) => res.json())
+      // .then(() => {
+      //   setValue('')
+      // });
+      
     let form = document.querySelector("form");
     let p = document.createElement("p");
     document.getElementById("feedback").append(p);
@@ -73,13 +79,13 @@ function Feedback() {
           <label htmlFor="photo_url">Your photo url:</label>
           <input
             // required
-            type="text"
+            type="url"
             name="image_url"
             id="photo_url"
             onChange={handleChange}
-            value={formData.image_url}
+            value="https://assets.manutd.com/AssetPicker/images/0/0/16/247/1111860/Player_Profile_Thumbnail_Mens_2223_Kit_Fred1658218415344_large.jpg"
             placeholder="Enter photo_url"
-          />{" "}
+          />
           <br />
           {/* <Link to={"/"}> */}
             <input type="submit" id="submit1" />

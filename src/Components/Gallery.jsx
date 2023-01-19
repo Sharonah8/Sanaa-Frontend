@@ -36,11 +36,15 @@ function Gallery({ img }) {
   };
 
   const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
+  
+  const handleClickOpen = (id) => {
+    localStorage.setItem("art_piece_id", id)
     setOpen(true);
   };
 
+  // const token = localStorage.getItem("token");
+  // console.log("TOKEN", token)
+    
   const handleClose = () => {
     setOpen(false);
   };
@@ -51,7 +55,7 @@ function Gallery({ img }) {
         <div className="product-card">
           <h2 className="product-name">{img.title}</h2>
           <span className="product-price">${img.price}.00</span>
-          <button className="popup-btn" onClick={handleClickOpen}>
+          <button className="popup-btn" onClick={e => handleClickOpen(img.id)}>
             Quick View
           </button>
           <img

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import LogIn from "./LogIn";
 import Footer from "./Footer";
 import "../Styles/SignUp.css";
@@ -11,27 +11,40 @@ function SignUp() {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const [welcomeMessage, setWelcomeMessage] = useState(false)
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
+    // const { name, value } = e.target;
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
   // const valid = () => {
   //   return formValues.username.length & formValues.email.length;
   // };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
     setWelcomeMessage(true);
 
-    let apiUrl = "http://localhost:3000/users";
+    let apiUrl = "http://localhost:3000/signup";
     fetch(apiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formValues),
+    })
+    .then((r) => {
+      if (r.ok) {
+        r.json().then((data) => {
+          console.log(data);
+          navigate("/login")
+        })
+      } else {
+        r.json().then((err) => console.log(err))
+     
+      }
     });
+    setFormValues('')
     // .then(()=>{
     //     setFormValues('')
     // })
@@ -42,7 +55,7 @@ function SignUp() {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       // console.log(formValues);
     }
-  }, [formErrors]);
+  }, [formErrors, isSubmit]);
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -69,7 +82,7 @@ function SignUp() {
       <div className="background">
       <div className="box">
         <div className="form">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={e => handleSubmit(e)}>
             {welcomeMessage ? (
               <div className="p-3 mb-2 bg-success text-white welcome-message">{`Hello ${formValues.username}, your registration is successful`}</div>
             ) : null}
@@ -82,7 +95,7 @@ function SignUp() {
                 name="username"
                 placeholder="Username"
                 value={formValues.username}
-                onChange={handleChange}
+                onChange={  handleChange}
                 required
               />
               <i id="loginlines"></i>
@@ -95,7 +108,7 @@ function SignUp() {
                 name="email"
                 placeholder="Email"
                 value={formValues.email}
-                onChange={handleChange}
+                onChange={ handleChange}
                 required
               />
               <i id="loginlines"></i>
@@ -108,7 +121,7 @@ function SignUp() {
                 name="password"
                 placeholder="Password"
                 value={formValues.password}
-                onChange={handleChange}
+                onChange={ handleChange}
                 required
               />
               <i id="loginlines"></i>
@@ -119,7 +132,7 @@ function SignUp() {
               <input
                 type="submit"
                 value="Register"
-                onClick={() => handleSubmit()}
+                
                 id="signupbtn"
               />
             </div>

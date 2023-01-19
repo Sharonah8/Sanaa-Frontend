@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './Components/NavBar';
@@ -18,6 +18,18 @@ import Feedback from './Components/Feedback';
 import FeedbackDisplay from './Components/FeedbackDisplay';
 
 function App() {
+  const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:3000/me", {headers: {'Authorization': `${localStorage.getItem("token")}`} })
+    .then(response => {
+      if (response.ok)
+      {setLogin(true);
+        response.json()
+    .then(data => console.log(data))}})
+    .catch(e => console.log(e))
+  }, []);
+
   return (
     <div className="App">
       <NavBar />

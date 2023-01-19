@@ -7,10 +7,10 @@ import GalleryList from "./GalleryList"
 
 
 function MainGallery() {
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState();
   const [searchValue, setSearchValue] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/art_pieces", {headers: {'Authorization': `${localStorage.getItem("token")}`} } )
+    fetch("http://127.0.0.1:3000/art_pieces",{headers: {'Authorization': `${localStorage.getItem("token")}`} } )
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);

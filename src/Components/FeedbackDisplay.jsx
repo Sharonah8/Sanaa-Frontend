@@ -3,16 +3,17 @@ import React, { useState, useEffect } from "react";
 import "../Styles/FeedbackDisplay.css";
 
 function FeedbackDisplay() {
-  const [feedbacks, setFeedback] = useState([]);
+  const [feedbacks, setFeedback] = useState();
   useEffect(() => {
     fetch("http://127.0.0.1:3000/reviews")
       .then((res) => res.json())
       .then((data) => setFeedback(data));
-  }, []);
-  
-  console.log("This the fetch data", feedbacks);
+      
+  }, []); 
+  // console.log("This the fetch data", feedbacks);
+
   function handleBlur(e) {
-    console.log(e.target.innerText);
+    // console.log(e.target.innerText);
     // //console.log(typeof(e.target.innerText))
     // setComment(previousState=>{
     //     previousState=e.target.innerText
@@ -36,7 +37,7 @@ function FeedbackDisplay() {
       .then((data) => console.log(data));
   }
   
-  const cards = feedbacks.map((feedback) => {
+  const cards = feedbacks&&feedbacks.map((feedback) => {
     return (
       <div key={feedback.id} className="feedbackCard">
         <p contentEditable="true" onBlur={handleBlur} id={feedback.id}>

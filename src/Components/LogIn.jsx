@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import "../Styles/LogIn.css";
 
 function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,10 +26,14 @@ function LogIn() {
       if (r.ok) {
         r.json().then((data) => {
           localStorage.setItem("token", data.token);
-          // navigate("/Gallery")
-        });
+          // console.log("UserData", data.user);
+          localStorage.setItem("userId", data.user.id);
+          
+          navigate("/Gallery")
+        })
       } else {
         r.json().then((err) => console.log(err));
+        // r.json().catch((err) => console.log(err));
       }
     });
   };
@@ -39,7 +43,7 @@ function LogIn() {
     <div className="background">
       <div className="box">
         <div className="form">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={e => handleSubmit(e)}>
             <div>
               <h2>Log~in</h2>
             </div>
@@ -73,14 +77,14 @@ function LogIn() {
               </a>
               {/* <a href="">Sign Up</a> */}
             </div>
-            <Link to={"/"}>
+            {/* <Link to={"/"}> */}
             <input
               type="submit"
               value="Login"
               onClick={() => handleSubmit()}
               id="loginbtn"
             />
-            </Link>
+            {/* </Link> */}
           </form>
           <Link to={"/signup"}>
             <span id="login-section"> Don't have an account? Sign up</span>
