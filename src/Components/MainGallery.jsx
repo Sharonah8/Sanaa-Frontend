@@ -6,19 +6,19 @@ import LogIn from "./LogIn";
 
 
 
-function MainGallery({login}) {
+function MainGallery({ login }) {
   const [images, setImages] = useState();
   const [searchValue, setSearchValue] = useState([]);
   const isLoggedIn = login
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/art_pieces",{headers: {'Authorization': `${localStorage.getItem("token")}`} } )
+    fetch("http://127.0.0.1:3000/art_pieces", { headers: { 'Authorization': `${localStorage.getItem("token")}` } })
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);
         setSearchValue(resp);
       });
   }, []);
-  
+
   function change(event) {
     setImages(
       searchValue.filter((images) =>
@@ -27,19 +27,21 @@ function MainGallery({login}) {
     );
   }
 
-  // return (
+  return (
     // {
-      isLoggedIn ? (
-        <div className = "main-gallery" >
-      <Search change={change} />
-      <GalleryList images = {images}/>
-       
+    // isLoggedIn ? 
+    // (
+    <div className="main-gallery" >
+      <Search change={ change } />
+      <GalleryList images={ images } />
+
     </div>
-      ): 
-      (<LogIn />)
+    // )
+    // : 
+    // (<LogIn />)
     // }
-    
-  // );
+
+  );
 }
 
 export default MainGallery;

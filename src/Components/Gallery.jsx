@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Review from "./Review";
 import Button from "@mui/material/Button";
 import "../Styles/Gallery.css";
@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 import { useParams } from "react-router-dom";
 import Feedback from "./Feedback";
-
+import LogIn from "./LogIn";
 // import Slide from '@mui/material/Slide';
 // import { TransitionProps } from '@mui/material/transitions';
 
@@ -26,9 +26,10 @@ import Feedback from "./Feedback";
 //   return <Slide direction="up" ref={ref} {...props} />;
 // });
 
-function Gallery({ img }) {
+function Gallery({ img, login }) {
   const { id } = useParams();
   const [gallery] = useState([]);
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
   const addGallery = (gallery) => {
@@ -39,7 +40,7 @@ function Gallery({ img }) {
   
   const handleClickOpen = (id) => {
     localStorage.setItem("art_piece_id", id)
-    setOpen(true);
+    login? (setOpen(true)) : (navigate("/login"))
   };
 
   // const token = localStorage.getItem("token");

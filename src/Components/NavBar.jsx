@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import navbar.css from styles
 import "../Styles/NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../Images/logo.png";
 import styled from "styled-components";
 
@@ -54,6 +54,23 @@ const DropDownList = styled("ul")`
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
+
+  function handleClick() {
+    fetch("http://localhost:3000/logout", {
+      method: "DELETE",
+      head: "no-content"
+    }
+    ).then(r => {
+      if (r.ok) {
+        alert("User logged out")
+        localStorage.clear();
+        navigate("/")
+      } else {
+        r.json().then(console.log)
+      }
+    })
+  }
 
   return (
     <nav class="navbar navbar-expand-lg bg-dark">
@@ -163,34 +180,39 @@ function NavBar() {
                 </Link> */}
               </li>
 
-              <li class="nav-item">
-                { localStorage.getItem("token") ?
-                  (<Link class="nav-link text-light" to="/LogIn">
-                    <button id="nav-btn-login" >Logout</button>
-                  </Link>) :
-                  (<div>
+
+              { localStorage.getItem("token") ?
+                (<li class="nav-item">
+                  <Link class="nav-link text-light" to="/LogIn">
+                    <button id="nav-btn-login" onClick={ handleClick }>Logout</button>
+                  </Link>
+                </li>) :
+                (<div>
+                  <li class="nav-item">
                     <Link class="nav-link text-light" to="/LogIn">
                       <button id="nav-btn-login">LogIn</button>
                     </Link>
-                    {/* <li class="nav-item"> */ }
+                  </li>
+                  <li class="nav-item">
                     <Link class="nav-link text-light" to="/SignUp">
                       <button id="nav-btn-login">SignUp</button>
                     </Link>
-                  </div>
+                  </li>
+                </div>
 
-                  ) }
-                {/* <Link class="nav-link text-light" to="/LogIn">
+                ) }
+              {/* <Link class="nav-link text-light" to="/LogIn">
                   <button id="nav-btn-login">LogIn</button>
                 </Link> */}
-                {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */ }
-                {/* </li> */ }
-                {/* <li class="nav-item">
+              {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */ }
+              {/* </li> */ }
+              {/* <li class="nav-item">
                 <Link class="nav-link text-light" to="/SignUp">
                   <button id="nav-btn-login">SignUp</button>
                 </Link> */}
 
-                {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */ }
-              </li>
+              {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */ }
+
             </ul>
           </div>
         </div>
