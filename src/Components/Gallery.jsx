@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 import { useParams } from "react-router-dom";
 import Feedback from "./Feedback";
-import LogIn from "./LogIn";
+// import LogIn from "./LogIn";
 // import Slide from '@mui/material/Slide';
 // import { TransitionProps } from '@mui/material/transitions';
 
@@ -40,7 +40,8 @@ function Gallery({ img, login }) {
   
   const handleClickOpen = (id) => {
     localStorage.setItem("art_piece_id", id)
-    login? (setOpen(true)) : (navigate("/login"))
+    // login? (setOpen(true)) : (navigate("/login"))
+    setOpen(true);
   };
 
   // const token = localStorage.getItem("token");

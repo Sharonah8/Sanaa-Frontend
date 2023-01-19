@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import GalleryList from "./GalleryList"
 // import Cart from "./Cart";
-import LogIn from "./LogIn";
+// import LogIn from "./LogIn";
 
 
 
