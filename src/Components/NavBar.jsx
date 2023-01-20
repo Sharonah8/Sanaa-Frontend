@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //import navbar.css from styles
 import "../Styles/NavBar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../Images/logo.png";
 import styled from "styled-components";
 
@@ -54,11 +54,28 @@ const DropDownList = styled("ul")`
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggling = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    fetch("http://localhost:3000/logout", {
+      method: "DELETE",
+      head: "no-content"
+    }
+    ).then(r => {
+      if (r.ok) {
+        alert("User logged out")
+        localStorage.clear();
+        navigate("/")
+      } else {
+        r.json().then(console.log)
+      }
+    })
+  }
 
   return (
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <img src={logo} id="img-mini" />
+        <img src={ logo } id="img-mini" />
         <button
           class="navbar-toggler"
           type="button"
@@ -105,9 +122,9 @@ function NavBar() {
           <Link class="nav-link text-light" to="/UpdateGallery">UpdateGallery</Link>
           </li> */}
 
-              {/* <Main> */}
+              {/* <Main> */ }
               <DropDownContainer>
-                <DropDownHeader onClick={toggling}>
+                <DropDownHeader onClick={ toggling }>
                   <li class="nav-item">
                     <Link class="nav-link text-light" to="/Gallery">
                       Gallery
@@ -116,14 +133,14 @@ function NavBar() {
                     </Link>
                   </li>
                 </DropDownHeader>
-                {isOpen && (
+                { isOpen && (
                   <DropDownListContainer>
                     <DropDownList className="nav-whole">
                       <ListItem>
                         <li class="nav-item">
                           <Link
                             class="nav-link text-light"
-                            to="/AddGallery"
+                            to={localStorage.getItem("token")? "/AddGallery" : "/login"}
                             id="drop-down-nav"
                           >
                             Add~Gallery
@@ -134,7 +151,7 @@ function NavBar() {
                         <li class="nav-item">
                           <Link
                             class="nav-link text-light"
-                            to="/GalleryListing"
+                            to={ localStorage.getItem("token") ? "/GalleryListing" : "/login"}
                             id="drop-down-nav"
                           >
                             GalleryListing
@@ -146,9 +163,9 @@ function NavBar() {
                 </li></ListItem> */}
                     </DropDownList>
                   </DropDownListContainer>
-                )}
+                ) }
               </DropDownContainer>
-              {/* </Main> */}
+              {/* </Main> */ }
 
               <li class="nav-item">
                 <Link to="/Cart">
@@ -163,19 +180,39 @@ function NavBar() {
                 </Link> */}
               </li>
 
-              <li class="nav-item">
-                <Link class="nav-link text-light" to="/LogIn">
+
+              { localStorage.getItem("token") ?
+                (<li class="nav-item">
+                  <Link class="nav-link text-light" to="/LogIn">
+                    <button id="nav-btn-login" onClick={ handleLogout }>Logout</button>
+                  </Link>
+                </li>) :
+                (<div>
+                  <li class="nav-item">
+                    <Link class="nav-link text-light" to="/LogIn">
+                      <button id="nav-btn-login">LogIn</button>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link class="nav-link text-light" to="/SignUp">
+                      <button id="nav-btn-login">SignUp</button>
+                    </Link>
+                  </li>
+                </div>
+
+                ) }
+              {/* <Link class="nav-link text-light" to="/LogIn">
                   <button id="nav-btn-login">LogIn</button>
-                </Link>
-                {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */}
-              </li>
-              <li class="nav-item">
+                </Link> */}
+              {/* <Link class="nav-link text-light" to="/LogIn">LogIn</Link> */ }
+              {/* </li> */ }
+              {/* <li class="nav-item">
                 <Link class="nav-link text-light" to="/SignUp">
                   <button id="nav-btn-login">SignUp</button>
-                </Link>
+                </Link> */}
 
-                {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */}
-              </li>
+              {/* <Link class="nav-link text-light" to="/SignUp">SignUp</Link> */ }
+
             </ul>
           </div>
         </div>

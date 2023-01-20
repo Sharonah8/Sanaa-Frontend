@@ -37,11 +37,11 @@ function App() {
       <Routes>
         
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/gallery" element={<MainGallery/>} />
-        <Route exact path="/addgallery" element={<AddGallery />} />
+        <Route exact path="/gallery" element={ <MainGallery login={ login } />} />
+        <Route exact path="/addgallery" element={<AddGallery login={login} />} />
         <Route exact path="/gallerylisting" element={<GalleryListing />} />
         <Route exact path="/updategallery" element={<UpdateGallery />} />
-        <Route exact path="/feedback" element={<Feedback />} />
+        <Route exact path="/feedback" element={ <Feedback login={ login } />} />
         <Route exact path="/feedbackdisplay" element={<FeedbackDisplay />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/login" element={<LogIn />} />

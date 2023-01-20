@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../Styles/AddGallery.css";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
-function AddGallery() {
+
+function AddGallery({login}) {
   const [image_url, setImage_url] = useState('');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -74,10 +76,12 @@ function AddGallery() {
           placeholder="price"
         />
         <br /> <br /> <br /> <br />
+          {/* <Link to={ "/Gallery" }> */}
         <button className="add-btn" >
           {" "}
           Upload{" "}
         </button>
+        {/* </Link> */}
         </form>
 
       </div>
