@@ -81,7 +81,6 @@ function FeedbackDisplay() {
   return (
     <div className="feed">
       <div className="cont2">
-        {/* <h1 id="what-about-us">What our customers have to say about us</h1> */}
         <div className="fcontainer">{cards}</div>
       </div>
     </div>

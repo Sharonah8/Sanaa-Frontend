@@ -76,12 +76,12 @@ function AddGallery({login}) {
           placeholder="price"
         />
         <br /> <br /> <br /> <br />
-          {/* <Link to={ "/Gallery" }> */}
+          <Link to={ "/GalleryListing" }>
         <button className="add-btn" >
           {" "}
           Upload{" "}
-        </button>
-        {/* </Link> */}
+        </button >
+        </Link>
         </form>
 
       </div>

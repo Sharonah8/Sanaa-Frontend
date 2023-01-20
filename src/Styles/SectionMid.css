@@ -1,4 +1,13 @@
 #mid-sec-h1 {
 margin-left: 8%;
 color: rgb(9, 8, 8);
+background-color: white;
+width: 48%;
+margin-left: -0%;
 }
+#mid-sec-h1:hover{
+    color: white;
+    background-color: black;
+  
+    }
+    
