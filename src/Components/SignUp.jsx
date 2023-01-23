@@ -27,7 +27,7 @@ function SignUp() {
     setIsSubmit(true);
     setWelcomeMessage(true);
 
-    let apiUrl = "http://localhost:3000/signup";
+    let apiUrl = "https://sanaa-production.up.railway.app/signup";
     fetch(apiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

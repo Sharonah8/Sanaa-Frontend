@@ -17,7 +17,7 @@ function AddGallery({login}) {
   const site = {image_url,title,description,price}
    
       
-    fetch("http://127.0.0.1:3000/art_pieces",{
+    fetch("https://sanaa-production.up.railway.app/art_pieces",{
       method: 'POST',
       headers: {"content-Type": "application/json"},
       body: JSON.stringify(site)

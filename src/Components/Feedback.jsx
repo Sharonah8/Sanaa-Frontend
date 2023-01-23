@@ -18,7 +18,7 @@ function Feedback() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/reviews", {
+    fetch("https://sanaa-production.up.railway.app/reviews", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

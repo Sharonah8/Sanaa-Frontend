@@ -5,7 +5,7 @@ import "../Styles/FeedbackDisplay.css";
 function FeedbackDisplay() {
   const [feedbacks, setFeedback] = useState();
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/reviews")
+    fetch("https://sanaa-production.up.railway.app/reviews")
       .then((res) => res.json())
       .then((data) => setFeedback(data));
       
@@ -23,7 +23,7 @@ function FeedbackDisplay() {
     // // console.log("handle Blur")
     
     fetch(
-      `http://127.0.0.1:3000/reviews/${e.target.id}`,
+      `https://sanaa-production.up.railway.app/reviews/${e.target.id}`,
       {
         method: "PATCH",
         headers: {
@@ -65,7 +65,7 @@ function FeedbackDisplay() {
     console.log("This is newfeedback:", newfeedbacks);
 
     fetch(
-      `http://127.0.0.1:3000/reviews/${e.target.id}`,
+      `https://sanaa-production.up.railway.app/reviews/${e.target.id}`,
       {
         method: "DELETE",
         headers: {

@@ -11,7 +11,7 @@ function MainGallery({ login }) {
   const [searchValue, setSearchValue] = useState([]);
   const isLoggedIn = login
   useEffect(() => {
-    fetch("http://127.0.0.1:3000/art_pieces", { headers: { 'Authorization': `${localStorage.getItem("token")}` } })
+    fetch("https://sanaa-production.up.railway.app/art_pieces", { headers: { 'Authorization': `${localStorage.getItem("token")}` } })
       .then((res) => res.json())
       .then((resp) => {
         setImages(resp);

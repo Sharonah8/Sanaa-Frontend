@@ -13,7 +13,7 @@ function LogIn() {
     e.preventDefault();
     // console.log(email, password);
     
-    fetch("http://localhost:3000/login", {
+    fetch("https://sanaa-production.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
